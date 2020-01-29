@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Gayathri&display=swap');
+/*--primary-color: #21A4AF;
+--secondary-color: #C84630;
+--accent1-color: #F7CC60;
+--accent2-color: #5B4B49;
+--heading-font: "Abril Fatface";
+--paragraph-font: Gayathri, Helvetica, sans-serif;*/
+
+html {
+  background-color: #21A4AF;
+  max-width: 960px;  
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface";
+    color:#5B4B49;
+}
+
+p{
+    font-family: Gayathri, Helvetica, sans-serif;
+    color:#5B4B49;
+    background-color: white;
+}
+
+nav {
+    background-color:#F7CC60 ;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em ;
+}
+nav>ul {
+    list-style-type: none;
+    display: flex ;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px ;
+}
+
+nav a:link,
+nav a:visited {
+    color:#C84630;
+}
