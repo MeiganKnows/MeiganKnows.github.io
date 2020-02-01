@@ -7,12 +7,20 @@
 --paragraph-font: Gayathri, Helvetica, sans-serif;*/
 
 html {
-  background-color: #21A4AF;
-  max-width: 960px;  
-  align-items: center;
+  background-color: #21A4AF;  
+  max-width: 960px;
+  margin: auto;
+  max-width: 960px;
+  }
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+ h1, h2, h3, h4, h5, h6 {
     font-family: "Abril Fatface";
     color:#5B4B49;
 }
@@ -20,7 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 p{
     font-family: Gayathri, Helvetica, sans-serif;
     color:#5B4B49;
-    background-color: white;
+    padding: 1em
+    
 }
 
 nav {

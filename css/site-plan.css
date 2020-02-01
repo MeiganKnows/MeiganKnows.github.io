@@ -31,23 +31,23 @@ h4,
 h5,
 h6 {
     font-family: var(--heading-font);
-    color: ;
+    color: var(--accent2-color);
 }
 
 header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color: ;
+    background-color: white;
 }
 
 header>h1 {
-    color: ;
+    color: var(--accent2-color);
 }
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
+    color: var(--accent2-color);
     padding: 1em
 }
 
@@ -84,7 +84,7 @@ p {
 }
 
 nav {
-    background-color: ;
+    background-color: var(--accent1-color);
     line-height: 3em;
     text-align: center;
     font-size: 1.2em ;
@@ -102,10 +102,10 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color:;
+    color: var(--secondary-color);
 }
 
 nav a:hover {
-    color: ;
-    background-color:;
+    color: var(--secondary-color);
+    background-color:var(--accent1-color);
 }
