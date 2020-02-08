@@ -1,30 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Gayathri&display=swap');
-/*--primary-color: #21A4AF;
+/These are just for me to help keep track of the exact colors and fonts I am using. 
+--primary-color: #21A4AF;
 --secondary-color: #C84630;
 --accent1-color: #F7CC60;
 --accent2-color: #5B4B49;
 --heading-font: "Abril Fatface";
---paragraph-font: Gayathri, Helvetica, sans-serif;*/
+--paragraph-font: Gayathri,
+Helvetica,
+sans-serif;
 
-html {
-  background-color: #21A4AF;  
-  max-width: 960px;
-  margin: auto;
-  max-width: 960px;
-  }
+*/ html {
+    background-color: #21A4AF;
+}
 
 body {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: white;
+    background-color:  #21A4AF;
     padding: 1em;
     font-family: Gayathri, Helvetica, sans-serif;
     font-size: 16px;
 }
 
- h1, h2, h3, h4, h5, h6 {
+header,
+p,
+nav , main{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Abril Fatface";
-    color:#5B4B49;
+    color: #5B4B49;
     font-size: 2rem;
 }
 
@@ -34,51 +45,51 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
 .headings {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .heading h1 {
-	font-size: 2rem;
-	color:#5B4B49;
-	margin: 0;
+    font-size: 2rem;
+    color: #5B4B49;
+    margin: 0;
 }
 
 .motto {
-	font-style: italic;
-	color: #5B4B49;
-	font-size: 1rem;
-	letter-spacing: 1.5pt;;
-	margin: 0;
+    font-style: italic;
+    color: #5B4B49;
+    font-size: 1rem;
+    letter-spacing: 1.5pt;
+    margin: 0;
 }
 
-p{
+p {
     font-family: Gayathri, Helvetica, sans-serif;
-    color:#5B4B49;
+    color: #5B4B49;
     padding: 1em
-    
 }
 
 nav {
-    background-color:#F7CC60 ;
+    background-color: #F7CC60;
     line-height: 4rem;
     text-align: center;
-    font-size: 1.2rem ;
+    font-size: 1.2rem;
 }
+
 nav>ul {
     list-style-type: none;
-    display: flex ;
+    display: flex;
 }
 
 nav a {
     padding: 1em;
-    min-width: 70px ;
+    min-width: 70px;
 }
 
 nav a:link,
 nav a:visited {
-    color:#C84630;
+    color: #C84630;
 }
