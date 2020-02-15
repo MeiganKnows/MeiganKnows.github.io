@@ -46,6 +46,7 @@ body {
 /* Activity 2 styles */
 .content2 {
     position: relative;
+    height: 350px;
 }
 
 .red2 {
@@ -83,9 +84,6 @@ body {
     top: 200px;
     left: 250px;
 }
-
-
-
 
 
 /* Activity 3 styles */
