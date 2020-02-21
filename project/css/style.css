@@ -127,7 +127,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 5px;
     justify-items: center;
 }
 
@@ -168,29 +168,28 @@ nav a:hover {
     grid-column: 1/6;
 }
 
-.home-right-img, .home-left-img {
+.home-right-img,
+.home-left-img {
     border: 1px solid #ccc;
     padding: 5px;
     box-shadow: 10px 10px 10px #999;
 }
 
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-}
-
-.attribution {
-    grid-column: 1/2;
+    position: relative;
+    font-family: Gayathri, Helvetica, sans-serif;
+    color: #5B4B49;
 }
 
 .social {
-    grid-column: 2/3;
-    justify-content: right;
+    display: inline;
+    position: absolute;
+    right: 0px;
+
 }
 
 @media screen and (max-width: 550px) {
     .home-grid {
-      display: block;
+        display: block;
     }
 }
