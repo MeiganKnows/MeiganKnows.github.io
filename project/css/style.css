@@ -173,7 +173,7 @@ nav a:hover {
 .home-paragraph-3 {
     grid-row: 7/8;
     grid-column: 1/6;
-   align-self: center;
+   text-align: center;
 }
 
 .home-right-img img,
