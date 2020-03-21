@@ -1,11 +1,17 @@
-.header, .subhead{
+tr:nth-of-type(1){
     background-color: black;
-}
-
-.header{
     text-emphasis-color: yellow;
 }
 
-.subhead{
+tr:nth-of-type(2){
+    background-color: black;
     text-emphasis-color: white;
+}
+
+tr:nth-of-type(5){
+    background-color: grey;
+}
+
+table{
+    border
 }
