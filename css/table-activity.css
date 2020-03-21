@@ -1,0 +1,11 @@
+.header, .subhead{
+    background-color: black;
+}
+
+.header{
+    text-emphasis-color: yellow;
+}
+
+.subhead{
+    text-emphasis-color: white;
+}
