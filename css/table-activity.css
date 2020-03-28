@@ -1,10 +1,12 @@
 table {
     border: 1px solid grey;
     border-collapse: collapse;
-    box-shadow: 10px -10px 10px -10px black;
+    box-shadow: 0 0 30px #777;
+    font-family: sans-serif;
 }
 
-td, th{
+td,
+th {
     border: 1px solid grey;
     padding: 10px;
 }
