@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Notary Service | Meigan, The Notary</title>
+    <meta name="description" content="Mobile Notary signing services website pages">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <picture> <img src="images/notary-logo.jpg" alt="Meigan, The Notary logo">
+        </picture>
+        <section class="heading">
+            <h1>Meigan, The Notary</h1>
+            <div class="motto">
+                <h6>Save time! We come to you!</h6>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fee-schedule.html">Fee Schedule</a></li>
+            <li><a href="appointment.html">Request Appointment</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact us to request an appointment</h1>
+        <div id="feedback"></div>
+        <form action="meigannotary@gmail.com" method="post">
+            <ul>
+                <li>
+                    <label for="name">Contact Name:</label>
+                    <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="email">Contact Email:</label>
+                    <input type="text" id="email" name="email">
+                </li>
+                <li>
+                    <label for="phone">Contact Phone Number:</label>
+                    <input type="text" id="phone" name="phone">
+                </li>
+                <li>
+                    <label for="service">Service Requested:</label>
+                    <select name="service" id="service">
+                        <option value="general">General Notary Work</option>
+                        <option value="refi">Refinance Loan</option>
+                        <option value="purchase">Purchase Loan</option>
+                        <option value="seller">Seller Package</option>
+                        <option value="reverse">Reverse Mortgage Loan</option>
+                        <option value="i9">I-9 Verification</option>
+                        <option value="pickup">Document Pick-up</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="location">Appointment Location:</label>
+                    <input type="text" id="location" name="location">
+                </li>
+                <li>
+                    <label for="date">Requested Date:</label>
+                    <input type="text" id="date" name="date">
+                </li>
+                <li>
+                    <label for="time">Requested Time:</label>
+                    <input type="text" id="time" name="time">
+                </li>
+                <li>
+                    <label for="additional">Additional Information:</label>
+                    <textarea name="additional" id="additional" cols="30"
+                        rows="10"></textarea>
+                </li>
+        </form>
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function (e) {
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML = 'Hello ' + formElement.name.value +
+                    '! Thank you for your message.' + "<br>" +
+                    ' We will get back with you as soon as possible!';
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+            });
+        </script>.
+    </main>
+    <footer>
+        &copy;2020 - Meigan First - WDD 130
+    </footer>
+</body>
+
+</html>
