@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lora|Satisfy&display=swap');
 
 :root {
-    --primary-color: #4281a4;
-    --secondary-color: #48a9a6;
-    --accent1-color: #e4dfda;
-    --accent2-color: #d4b483;
-    --accent3-color: #c1666b;
+    --primary-color: #2a4d54;
+    --secondary-color: #666A86;
+    --accent1-color: #D6C191;
+    --accent2-color: #D6C191;
+    --accent3-color: #510b37;
     --heading-font: Satisfy, cursive;
     --paragraph-font: Lora, Ariel, sans-serif;
 }
@@ -35,7 +35,8 @@ h6 {
 p {
     font-family: var(--paragraph-font);
     color: var(--primary-color);
-    padding: 1em font-size: 18px;
+    padding: 1em;
+    font-size: 18px;
 }
 
 header {
@@ -118,17 +119,22 @@ table {
     display: flex;
 }
 
+.fountainpen {
+    margin: 0 auto;
+}
+
 form {
     margin: 0 auto;
     padding: 1em;
     border: 1px solid var(--accent3-color);
     border-radius: 1em;
-   
+
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 label {
     display: inline-block;
     width: 150px;
@@ -136,15 +142,16 @@ label {
 }
 
 input,
-textarea, select {
-   font: 1em var(--paragraph-font);
-   color: var(--primary-color);
-   width: 300px;
-   box-sizing: border-box;
-   border: 1px solid #999;
-   margin: 10px;
+textarea,
+select {
+    font: 1em var(--paragraph-font);
+    color: var(--primary-color);
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    margin: 10px;
 }
 
-textarea{
+textarea {
     vertical-align: top;
 }
