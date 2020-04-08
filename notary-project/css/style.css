@@ -67,6 +67,7 @@ nav {
     line-height: 3em;
     text-align: center;
     font-size: 1.2em;
+    
 }
 
 nav>ul {
@@ -109,6 +110,11 @@ nav a:hover {
     grid-column: 2/3;
 }
 
+.fee-note{
+    font-style: italic;
+    font-size: .75em;
+
+}
 table {
     border: 2px solid var(--accent3-color);
     font-size: 1.2em;

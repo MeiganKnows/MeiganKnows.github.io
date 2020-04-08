@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes|Lora|Satisfy&display=swap');
 
 :root {
-    --primary-color: #4281a4;
-    --secondary-color: #48a9a6;
-    --accent1-color: #e4dfda;
-    --accent2-color: #d4b483;
-    --accent3-color: #c1666b;
+    --primary-color: #2a4d54;
+    --secondary-color: #666A86;
+    --accent1-color: #D6C191;
+    --accent2-color: #D6C191;
+    --accent3-color: #510b37;
     --heading-font: Satisfy, cursive;
     --paragraph-font: Lora, Ariel, sans-serif;
 }
