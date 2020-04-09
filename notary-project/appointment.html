@@ -30,33 +30,35 @@
     </nav>
     <main>
         <h1>Contact us to request an appointment</h1>
-
+<div class="appointment-grid">
     <img class="fountainpen" src="images/pen-4163403_640.jpg" alt="fountain pen with document">
         
-        <form action="meigannotary@gmail.com" method="post">
+        <form class="form" action="meigannotary@gmail.com" method="post">
             <ul>
                 <li>
                     <label for="name">Contact Name:</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                 </li>
                 <li>
                     <label for="email">Contact Email:</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email">
                 </li>
                 <li>
                     <label for="phone">Contact Phone Number:</label>
-                    <input type="text" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone">
                 </li>
                 <li>
                     <label for="service">Service Requested:</label>
-                    <select name="service" id="service">
+                    <select name="service" id="service" multiple required>
                         <option value="general">General Notary Work</option>
                         <option value="refi">Refinance Loan</option>
                         <option value="purchase">Purchase Loan</option>
                         <option value="seller">Seller Package</option>
                         <option value="reverse">Reverse Mortgage Loan</option>
+                        <option value="application">Loan Application</option>
                         <option value="i9">I-9 Verification</option>
                         <option value="pickup">Document Pick-up</option>
+                        <option value="other">Other</option>
                     </select>
                 </li>
                 <li>
@@ -65,11 +67,11 @@
                 </li>
                 <li>
                     <label for="date">Requested Date:</label>
-                    <input type="text" id="date" name="date">
+                    <input type="date" id="date" name="date" required>
                 </li>
                 <li>
                     <label for="time">Requested Time:</label>
-                    <input type="text" id="time" name="time">
+                    <input type="time" id="time" name="time"required>
                 </li>
                 <li>
                     <label for="additional">Additional Information:</label>
@@ -79,7 +81,8 @@
                     <button type="submit">Request Appointment</button>
                 </li>
                 <div id="feedback"></div>
-        </form>
+        </form></div>
+
         <script>
             // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
