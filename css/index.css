@@ -1,0 +1,38 @@
+/* main color = #2a4d54;*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fahkwang&display=swap');
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cinzel, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+p {
+    font-family: Fahkwang, Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 1em;
+    font-size: 18px;
+}
+
+header {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2a4d54;
+}
+
+header h1{
+    color: white;
+}
