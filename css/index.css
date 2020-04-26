@@ -16,6 +16,7 @@ h5,
 h6 {
     font-family: Cinzel, 'Times New Roman', Times, serif;
     font-size: 2em;
+    color: gray;
 }
 
 p {
@@ -27,12 +28,26 @@ p {
 
 header {
     padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color:#2a4d54;
+    text-align: center;
 }
 
 header h1{
+    color: white;
+}
+
+img{
+    float: right;
+}
+
+footer{ 
+    padding: 5px 10px;
+    text-align: center;
+    background-color:#2a4d54;
+    height: 2em;
+    color: white;
+}
+
+footer a:link {
     color: white;
 }
