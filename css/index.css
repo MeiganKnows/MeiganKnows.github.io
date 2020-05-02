@@ -1,6 +1,4 @@
 /* main color = #2a4d54;*/
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fahkwang&display=swap');
-
 body {
     max-width: 900px;
     margin: 0 auto;
@@ -15,7 +13,6 @@ h4,
 h5,
 h6 {
     font-family: Cinzel, 'Times New Roman', Times, serif;
-    font-size: 2em;
     color: gray;
 }
 
@@ -34,10 +31,15 @@ header {
 
 header h1{
     color: white;
+    font-size: 1.5em;
+}
+
+h2{
+font-size: 1em;
 }
 
 img{
-    float: right;
+    align-items: center;
 }
 
 footer{ 
@@ -51,3 +53,7 @@ footer{
 footer a:link {
     color: white;
 }
+footer a:visited {
+    color: pink;
+}
+
