@@ -1,0 +1,78 @@
+body {
+    margin: 0 auto;
+    background-color: white;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Cinzel Decorative", 'Times New Roman', Times, serif;
+    color: white;
+}
+
+p {
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 1em;
+    font-size: 16px;
+}
+
+header {
+    padding: 5px 10px;
+    background-color: #2a4d54;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+.sectionhead {
+    background-color: #2a4d54;
+    text-align: center;
+    }
+
+img {
+    width: 275px;
+    margin: 0 auto; 
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+   }
+
+footer {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #2a4d54;
+    height: 2em;
+    color: white;
+}
+
+a:link {
+    font-family: Jost, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a:visited {
+    color: pink;
+}
