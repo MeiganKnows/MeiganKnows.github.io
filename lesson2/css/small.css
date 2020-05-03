@@ -44,6 +44,7 @@ section {
 }
 
 .sectionhead {
+    padding: 5px;
     background-color: #2a4d54;
     text-align: center;
 }
