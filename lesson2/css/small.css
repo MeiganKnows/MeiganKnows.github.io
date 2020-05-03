@@ -18,7 +18,7 @@ p {
     font-family: Jost, Arial, Helvetica, sans-serif;
     color: gray;
     padding: 1em;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 header {
@@ -29,10 +29,6 @@ header {
 
 header h1 {
     font-size: 1.5em;
-}
-
-h2 {
-    font-size: 1em;
 }
 
 main {
