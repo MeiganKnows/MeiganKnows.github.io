@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #39A2AE;
+    --secondary-color: #FF6B6B;
+    --accent1-color: #BBF5EA;
+    --accent2-color: #E5E1EE;
+    --accent3-color: #3E444A;
+    --heading-font: "Playfair Display";
+    --paragraph-font: "Gothic A1", Helvetica, sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: ;
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Cinzel, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+p {
+    font-family: Fahkwang, Arial, Helvetica, sans-serif;
+    color: gray;
+    padding: 1em;
+    font-size: 18px;
+}
+
+header {
+    padding: 5px 10px;
+    background-color:#2a4d54;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-size: 1.5em;
+}
+
+h2{
+font-size: 1em;
+}
+
+img{
+    align-items: center;
+}
+
+footer{ 
+    padding: 5px 10px;
+    text-align: center;
+    background-color:#2a4d54;
+    height: 2em;
+    color: white;
+}
+
+footer a:link {
+    color: white;
+}
+footer a:visited {
+    color: pink;
+}
