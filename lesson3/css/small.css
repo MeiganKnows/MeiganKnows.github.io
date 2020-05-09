@@ -1,17 +1,21 @@
 :root {
-    --primary-color: #39A2AE;
-    --secondary-color: #FF6B6B;
-    --accent1-color: #BBF5EA;
-    --accent2-color: #E5E1EE;
-    --accent3-color: #3E444A;
+    --primary-color: #FFF07C;
+    --secondary-color: #132A13;
+    --accent1-color: #CD8B76;
+    --accent2-color: #F0F7F4;
+    --accent3-color: #284B63;
     --heading-font: "Playfair Display";
     --paragraph-font: "Gothic A1", Helvetica, sans-serif;
+}
+
+html {
+    background-color: var(--accent1-color);
 }
 
 body {
     max-width: 900px;
     margin: 0 auto;
-    background-color: ;
+    background-color: white;
     padding: 1em;
 }
 
@@ -21,47 +25,69 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Cinzel, 'Times New Roman', Times, serif;
-    color: gray;
+    font-family: var(--heading-font), 'Times New Roman', Times, serif;
+    color: var(--accent3-color);
 }
 
-p {
-    font-family: Fahkwang, Arial, Helvetica, sans-serif;
-    color: gray;
-    padding: 1em;
-    font-size: 18px;
+p, ul{
+    font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+     font-size: 18px;
 }
 
 header {
     padding: 5px 10px;
-    background-color:#2a4d54;
+    background-color: var(--primary-color);
     text-align: center;
 }
 
-header h1{
-    color: white;
+header h1 {
+    font-size: 2.5em;
+}
+
+header h2 {
     font-size: 1.5em;
 }
 
-h2{
-font-size: 1em;
+nav {
+    background-color: var(--primary-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
 }
 
-img{
-    align-items: center;
+nav>ul {
+    list-style-type: none;
+    display: flex;
 }
 
-footer{ 
+nav a {
+    padding: 1em;
+    min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+    color:var(--secondary-color);
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+footer {
     padding: 5px 10px;
     text-align: center;
-    background-color:#2a4d54;
+    background-color:var(--primary-color);
     height: 2em;
-    color: white;
+    color: var(--accent3-color);
 }
 
 footer a:link {
-    color: white;
+    color:var(--accent3-color);
 }
+
 footer a:visited {
-    color: pink;
+    color: var(--secondary-color);
 }
