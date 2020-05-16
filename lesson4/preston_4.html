@@ -7,6 +7,8 @@
     <title>SITE TITLE</title>
     <meta name="description"
         content="Weather wonder informationg pertaining specifically to Preston, Idaho. WDD 230, Spring 2020. Meigan First">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Playfair+Display&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -20,7 +22,8 @@
         <div>Wonder no more! Know!</div>
     </header>
     <nav>
-        <ul>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -30,12 +33,18 @@
         </ul>
     </nav>
     <main>
-        <section>Weather Summary, and hero image</section>
-        <section>5 day forcast</section>
-        <section>article and image</section>
-        <section>Map and Contact information</section>
+        <section> <h2>Weather Summary, and hero image</h2></section>
+        <section><h2>5 day forcast</h2></section>
+        <section><h2> article and image</h2></section>
+        <section><h2>Map and Contact information</h2></section>
     </main>
-    <footer></footer>
+    <footer>
+        &#169;2020 Weather Wonder| Attributions| Meigan First <br>
+        <span id="curDate"></span>
+    </footer>
+
+    <script src="js/preston.js"></script>
+
 
 
 </body>

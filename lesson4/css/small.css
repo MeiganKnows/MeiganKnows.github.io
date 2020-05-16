@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #FFF07C;
+    --secondary-color: #132A13;
+    --accent1-color: #CD8B76;
+    --accent2-color: #F0F7F4;
+    --accent3-color: #284B63;
+    --heading-font: "Playfair Display";
+    --paragraph-font: "Gothic A1", Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font), 'Times New Roman', Times, serif;
+    color: var(--accent3-color);
+}
+
+p,
+ul {
+    font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header div {
+    font-family: var(--heading-font), 'Times New Roman', Times, serif;
+    color: var(--accent3-color);
+    font-size: 1.0em;
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--accent3-color)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--accent3-color);
+}
+
+nav ul li a {
+    padding: .8rem 2%;
+    min-width: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: var(--accent3-color);
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent3-color);
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    height: 2em;
+    color: var(--accent3-color);
+}
+
+section {
+    border: 2px dotted var(--accent3-color);
+    line-height: 3em;
+    margin: 20px;
+    background-color: var(--accent1-color);
+    color: white;
+}
