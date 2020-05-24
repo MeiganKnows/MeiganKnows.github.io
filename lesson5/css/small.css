@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #FFF07C;
+    --secondary-color: #132A13;
+    --accent1-color: #CD8B76;
+    --accent2-color: #F0F7F4;
+    --accent3-color: #284B63;
+    --heading-font: "Playfair Display";
+    --paragraph-font: "Gothic A1", Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font), 'Times New Roman', Times, serif;
+    color: var(--accent3-color);
+}
+
+p,
+ul {
+    font-family: var(--paragraph-font), Arial, Helvetica, sans-serif;
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    width: 100px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header .header {
+    padding: 5px;
+}
+
+header div.motto {
+    font-family: var(--heading-font), 'Times New Roman', Times, serif;
+    color: var(--accent3-color);
+    font-size: 1.0em;
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--accent3-color)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color: var(--accent3-color);
+}
+
+nav ul li a {
+    padding: .8rem 2%;
+    min-width: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: var(--accent3-color);
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent3-color);
+}
+
+nav a:hover {
+    color: white;
+    background-color: var(--accent1-color);
+}
+
+nav .active {
+    background-color: var(--accent3-color);
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main,
+    {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.herosection {
+    position: relative;
+}
+
+.heropic {
+    max-width: 500px;
+    display: block;
+}
+
+.summary {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border: 2px solid var(--primary-color);
+    background-color: rgba(205, 139, 118, .85);
+}
+
+.fiveday {
+    display: none;
+
+}
+
+.articleimg {
+    max-width: 500px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 600px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+}
+
+.contactinfo{
+    padding:
+}
+
+footer {
+    padding: 5px 10px;
+    text-align: center;
+    background-color: var(--primary-color);
+    height: 2em;
+    color: var(--accent3-color);
+}
+
+section {
+    padding: 10px;
+}

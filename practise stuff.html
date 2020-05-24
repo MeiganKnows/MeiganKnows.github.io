@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name= "viewport" content="width=device-width, initial-scale=1">
+        <title>Preston Id Page</title>
+        <meta name="description" content="WDD230 Spring 2020 Forcast Project Plan">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/lg.css">
+        <link rel="stylesheet" href="css/sm.css"> 
+    <body>
+    <header>
+        <img src="images/logo5.jpg" alt="logo">
+        <h1>Forcast Site</h1>
+        <div>Your one Stop Shop</div>
+        <nav>
+            <ul class="navigation responsive">
+                <li><a class="ham" href="#">&#9976; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>          
+            <p>Hero w/weather summary</p>
+            <p>5 Day Forcast</p>
+            <p>Article</p>
+            <p>Contact Information</p>
+        </main>
+    <footer>
+       <p class="foot">&copy;Weather Outlet | Attributions | Chelsea Thomson<br> 
+       Last Update: <span id="last"></span>
+    </footer>         
+    <script>
+        document.getElementById("last").textContent=document.lastModified;
+    </script>
+    </body>
+</html>
