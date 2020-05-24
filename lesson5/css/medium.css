@@ -36,8 +36,7 @@
         padding: .8rem 1rem;
     }
 
-    main,
-        {
+    main {
         max-width: 900px;
         margin: 0 auto;
         padding: 10px;
@@ -50,11 +49,12 @@
     .heropic {
         max-width: 900px;
         display: block;
+        margin: 0 auto;
     }
 
     .summary {
         position: absolute;
-        top: 25px;
+        top: 50px;
         right: 25px;
         border: 2px solid var(--primary-color);
         background-color: rgba(205, 139, 118, .85);
@@ -62,14 +62,26 @@
 
     .fiveday {
         display: block;
+        text-align: center;
     }
 
     .fiveday tr img {
         max-width: 100px;
     }
 
+    table{
+       margin: 0 auto;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid var(--accent3-color);
+        text-align: center;
+    }
+
     .articleimg {
-        float: left;
+    justify-self: center;
     }
 
 

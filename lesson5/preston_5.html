@@ -17,6 +17,9 @@
 </head>
 
 <body>
+    <section id="banner">
+        <h2>Saturday = Preston Pancakes in the Park!</h2> <h3>9:00 a.m. Saturday at the city park pavilion.</h3>
+    </section>
     <header>
         <img src="images/weather_icon.png" alt="Weather Wonder icon">
         <div class="header">
@@ -26,7 +29,7 @@
     </header>
     <nav>
         <button onclick="toggleMenu()">&#9776; Menu</button>
-        <ul id="primaryNav" class="hide">
+        <ul id="primaryNav" class="">
             <li><a href="#">Home</a></li>
             <li><a class="active" href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -39,7 +42,7 @@
         <section class=herosection>
             <img class="heropic" src="images/ranch.jpg" alt="farm buildings and field">
             <div class="summary">
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h3>Lorem ipsum dolor sit amet.</h3>
                 <p>Lorem ipsum dolor sit </p>
                 <p>Lorem, ipsum.</p>
                 <p>Lorem, ipsum dolor.</p>
@@ -57,18 +60,23 @@
                     <th>Friday</th>
                 </tr>
                 <tr>
-                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>70 &#730;F</td>
-                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>77 &#730;F</td>
-                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>82 &#730;F</td>
+                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>70 &#730;F
+                    </td>
+                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>77 &#730;F
+                    </td>
+                    <td><img class="weathericon" src="images/partlysunny.png" alt="partly sunny icon"><br>82 &#730;F
+                    </td>
                     <td><img class="weathericon" src="images/sunny.png" alt="sunny icon"><br>87 &#730;F</td>
                     <td><img class="weathericon" src="images/sunny.png" alt="sunny icon"><br>91 &#730;F</td>
                 </tr>
             </table>
         </section>
-        <section>
-            <h2>Something really interesting</h2>
-            <img class="articleImg" src="images/preston-article.jpg" alt="historic windmill in disrepair">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa neque quidem fugiat error quisquam
+        <section class="article">
+            <h2 class="articlehead">Something really interesting</h2>
+            <img class="articleimg" src="images/preston-article.jpg" alt="historic windmill in disrepair">
+
+            <p class="articletext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa neque quidem
+                fugiat error quisquam
                 aut id, excepturi eligendi inventore odit molestiae rem sunt ex quo quae dolorem nobis ullam suscipit
                 iusto rerum voluptatibus quis. Perspiciatis in sequi ullam nihil! Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Porro in sequi officia obcaecati alias molestias aperiam expedita cum, minima
@@ -78,23 +86,34 @@
                 Quas dolorem vero porro qui ut? Provident magni cupiditate similique officia cum. Velit ex cum nisi
                 porro praesentium in ratione, voluptatem laudantium neque nostrum harum similique repellendus
                 exercitationem, quo quis perferendis, sit ipsum maxime repudiandae quisquam a sed quas nihil. Iure!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quas, ad, unde provident dicta
+                doloremque odio quos porro consequuntur cum sequi perferendis ullam! Aut id recusandae doloremque,
+                deleniti placeat magni! Voluptas sunt quasi cumque nam reprehenderit natus quos earum beatae soluta amet
+                totam a nihil minima corporis corrupti veritatis suscipit quam consequatur provident illo maxime nulla,
+                ad id. Animi corporis atque, debitis alias dolorem dignissimos odio assumenda qui libero placeat laborum
+                natus sint, dolor facere consequatur non quo distinctio pariatur deserunt aspernatur. Ad amet,
+                consequatur, iusto ipsa illum asperiores, numquam iure corporis aspernatur facilis quas reprehenderit
+                velit vero doloribus ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor fugit
+                sapiente voluptates dicta quae quis. Ipsum, adipisci animi fugiat, recusandae culpa voluptatem rem autem
+                quaerat rerum sit qui optio voluptates facilis, consequatur maxime veritatis reiciendis! Ullam animi,
+                culpa neque accusamus dolores, quam cum ipsa adipisci maiores illum, vitae tenetur?
             </p>
-        </section>
+
+        </section class="contact">
         <h2>Contact Us</h2>
+        <div class=contactinfo>
+            <p>27 N. State Street</p>
+            <p>Preston, Idaho 83262</p>
+            <p>&#9742; 208.598.6874</p>
+            <p>&#9993; contact@weatherwonder.com</p>
+        </div>
         <div class="mapouter">
             <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
                     src="https://maps.google.com/maps?q=27%20n%20state%20street%2C%20preston%20id&t=&z=13&ie=UTF8&iwloc=&output=embed"
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                     href="https://www.embedgooglemap.net/en/"></a></div>
         </div>
-        <div class=contactinfo>
-        <p>27 N. State Street</p>
-        <p>Preston, Idaho 83262</p>
-        <p>&#9742; 208.598.6874</p>
-        <p>&#9993; contact@weatherwonder.com</p></div>
-        <section>
 
-        </section>
     </main>
     <footer>
         &#169;2020 Weather Wonder| Attributions| Meigan First <br>
