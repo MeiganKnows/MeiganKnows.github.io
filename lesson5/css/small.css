@@ -104,8 +104,7 @@ nav ul.hide {
     display: none;
 }
 
-main,
-    {
+main{
     max-width: 500px;
     margin: 0 auto;
     padding: 10px;
@@ -152,7 +151,7 @@ main,
 }
 
 .contactinfo{
-    padding:
+    padding: 20px;
 }
 
 footer {

@@ -35,37 +35,56 @@
         border: none;
         padding: .8rem 1rem;
     }
-}
 
-main,
-    {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px;
-}
+    main,
+        {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+    }
 
-.herosection {
-    position: relative;
-}
+    .herosection {
+        position: relative;
+    }
 
-.heropic {
-    max-width: 900px;
-    display: block;
-}
+    .heropic {
+        max-width: 900px;
+        display: block;
+    }
 
-.summary {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    border: 2px solid var(--primary-color);
-    background-color: rgba(205, 139, 118, .85);
-}
+    .summary {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        border: 2px solid var(--primary-color);
+        background-color: rgba(205, 139, 118, .85);
+    }
 
-.fiveday {
-    display: block;
+    .fiveday {
+        display: block;
+    }
 
-}
+    .fiveday tr img {
+        max-width: 100px;
+    }
 
-.articleimg {
-   float: left;
+    .articleimg {
+        float: left;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
