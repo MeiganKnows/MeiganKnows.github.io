@@ -16,12 +16,12 @@ h6 {
     color: gray;
 }
 
-p {
+li{
     font-family: Fahkwang, Arial, Helvetica, sans-serif;
     color: gray;
-    padding: 1em;
+    padding: .5em;
     font-size: 18px;
-}
+    }
 
 header {
     padding: 5px 10px;

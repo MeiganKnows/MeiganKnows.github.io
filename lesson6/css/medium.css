@@ -1,0 +1,102 @@
+@media only screen and (min-width: 35em) {
+
+    p,
+    ul {
+        font-size: 16px;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header div {
+        font-size: 1.5em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .herosection {
+        position: relative;
+    }
+
+    .heropic {
+        max-width: 900px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .summary {
+        position: absolute;
+        top: 50px;
+        right: 25px;
+        border: 2px solid var(--primary-color);
+        background-color: rgba(205, 139, 118, .85);
+    }
+
+    .fiveday {
+        display: block;
+        text-align: center;
+    }
+
+    .fiveday tr img {
+        max-width: 100px;
+    }
+
+    table{
+       margin: 0 auto;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid var(--accent3-color);
+        text-align: center;
+    }
+
+    .articleimg {
+    justify-self: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
