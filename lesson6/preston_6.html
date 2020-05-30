@@ -38,12 +38,16 @@
     </nav>
     <main>
         <section class=herosection>
-            <img class="heropic" src="images/ranch.jpg" alt="farm buildings and field">
+            <picture class=heropic>
+                <source media="(max-width: 500px)" srcset="images/franklin500.jpg">
+                <source media="(max-width: 900px)" srcset="images/franklin900.jpg">
+                <img src="images/franklin1150.jpg" alt="Sunny field with trees">
+            </picture>
             <div class="summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>
                 <p>High: <span id="temp">42</span>&#176;F</p>
-                <p>Wind Chill: <span id=chill></span></p>
+                <p>Wind Chill: <span id=chill></span>&#176;F</p>
                 <p>Humidity: <span>22</span>%</p>
                 <p>Wind Speed: <span id="speed">7</span> mph</p>
             </div>
