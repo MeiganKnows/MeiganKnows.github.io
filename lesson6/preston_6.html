@@ -7,8 +7,6 @@
     <title>Preston | WeatherWonder.com</title>
     <meta name="description"
         content="Weather wonder informationg pertaining specifically to Preston, Idaho. WDD 230, Spring 2020. Meigan First">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Playfair+Display&display=swap"
-        rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
@@ -42,11 +40,12 @@
         <section class=herosection>
             <img class="heropic" src="images/ranch.jpg" alt="farm buildings and field">
             <div class="summary">
-                <h3>Lorem ipsum dolor sit amet.</h3>
-                <p>Lorem ipsum dolor sit </p>
-                <p>Lorem, ipsum.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: <span id="temp">42</span>&#176;F</p>
+                <p>Wind Chill: <span id=chill></span></p>
+                <p>Humidity: <span>22</span>%</p>
+                <p>Wind Speed: <span id="speed">7</span> mph</p>
             </div>
         </section>
         <section class=fiveday>
@@ -98,8 +97,9 @@
                 quaerat rerum sit qui optio voluptates facilis, consequatur maxime veritatis reiciendis! Ullam animi,
                 culpa neque accusamus dolores, quam cum ipsa adipisci maiores illum, vitae tenetur?
             </p>
+        </section>
 
-        </section class="contact">
+        <section class="contact">
         <h2>Contact Us</h2>
         <div class=contactinfo>
             <p>27 N. State Street</p>
@@ -113,17 +113,18 @@
                     frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
                     href="https://www.embedgooglemap.net/en/"></a></div>
         </div>
+        </section>
 
     </main>
     <footer>
         &#169;2020 Weather Wonder| Attributions| Meigan First <br>
         <span id="curDate"></span>
     </footer>
-
     <script src="js/preston.js"></script>
+    <script src="js/windchill.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-
-
+    <script src="js/webfont.js"></script>
 </body>
 
 </html>
