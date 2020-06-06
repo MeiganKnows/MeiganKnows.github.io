@@ -23,6 +23,7 @@
 
     nav ul.hide {
         display: flex;
+        margin: 0;
     }
 
     nav ul {
@@ -68,8 +69,8 @@
         max-width: 100px;
     }
 
-    table{
-       margin: 0 auto;
+    table {
+        margin: 0 auto;
     }
 
     table,
@@ -80,7 +81,7 @@
     }
 
     .articleimg {
-    justify-self: center;
+        justify-self: center;
     }
 
 

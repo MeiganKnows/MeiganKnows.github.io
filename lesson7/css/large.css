@@ -10,14 +10,16 @@
     header div {
         font-size: 2em;
     }
+
     main {
         max-width: 1100px;
         margin: 0 auto;
         padding: 10px;
     }
+
     .heropic {
         max-width: 1100px;
-        
+
     }
 
     article {
@@ -30,6 +32,10 @@
 
     .articleimg {
         float: right;
+    }
+
+    .gallery figure:hover {
+        box-shadow: 20px -20px var(--accent3-color);
     }
 
     section.contact {
