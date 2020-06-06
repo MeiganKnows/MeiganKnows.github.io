@@ -9,7 +9,7 @@ const imgOptions = {
 //changes placeholder image to actual image when activated
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src'));
-    image.onLoad = () => {
+    image.onload = () => {
         image.removeAttribute('data-src');
     };
 };
