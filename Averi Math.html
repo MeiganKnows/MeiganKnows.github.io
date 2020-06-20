@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Practise your math facts!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+        h1,
+        p {
+            font-family: "Fugaz One", cursive;
+            color: whitesmoke;
+        }
+
+        input {
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            width: 20em;
+
+        }
+
+        body {
+            background: rgb(132, 94, 178);
+            background: linear-gradient(90deg, rgba(132, 94, 178, 1) 0%, rgba(95, 9, 121, 1) 44%, rgba(233, 22, 224, 1) 100%);
+        }
+
+        button {
+            border: none;
+            color: white;
+            background-color: rgba(233, 22, 224, 1);
+            padding: 10px;
+            width: 20em;
+        }
+        }
+    </style>
+    <script>
+        /* Input: Math equation as seprate fields. 
+   Processing: Determine if entered equation is correct. 
+   Output: Display correct or incorrect result. 
+*/
+        function Arithmatic() {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+            let ans = parseFloat(document.getElementById("answer").value);
+            let op = document.getElementById("operator").value;
+
+            let message;
+            let sol;
+
+            if (op == "+") {
+                sol = num1 + num2;
+            } else if (op == "-") {
+                sol = num1 - num2;
+            } else if (op == "*") {
+                sol = num1 * num2;
+            } else if (op == "/") {
+                sol = num1 / num2;
+            } else message = "I can't do that kind of math yet.";
+
+
+            if (ans == sol) {
+                message = "Correct! Good Job!";
+            } else {
+                message = "Incorrect! Try Again!"
+            };
+
+            document.getElementById("output").innerHTML = message;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Don't forget to practise your math, Averi?</h1>
+    <p>Enter your problem, then click the button to check your answer! <br>(Remember that you can only us +, -, /, and *)
+    </p>
+    <input type="text" id="num1">
+    <input type="text" id="operator">
+    <input type="text" id="num2">
+    <input type="text" id="answer">
+    <button type="button" id="mathFun" onclick="Arithmatic ()">Are you right?</button>
+    <h1>
+        <div id="output"> </div>
+    </h1>
+</body>
+
+</html>

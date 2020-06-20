@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Special+Elite&display=swap');
+
+body{
+    font-family: "Special Elite", cursive;
+    font-size: 18pt;
+    color: #4D243D;
+    background-color: #D0A98F;
+}
+
+h1, h2{
+    font-family: "Merriweather", serif;
+}
+
+main div.cards{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    max-width: 1fr;
+}
+main div.cards section{
+    background-color: #CAC2B5;
+    border:2px solid #4D243D;
+    text-align: center;
+}
+
+main div.cards img{
+    padding:5px;
+    border: 1px solid #4D243D;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 35em) {
+    main div.cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 1000px){
+    main div.cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
