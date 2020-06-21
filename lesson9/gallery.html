@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston | WeatherWonder.com</title>
+    <meta name="description"
+        content="Weather wonder informationg pertaining specifically to Preston, Idaho. WDD 230, Spring 2020. Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weather_icon.png" alt="Weather Wonder icon">
+        <div class="header">
+            <h1>Weather Wonder</h1>
+            <div class="motto">Wonder no more! Know!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a class="active" href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=gallery>
+            <h2>Image Gallery</h2>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/aircraftclouds500.jpg"
+                    alt="small airplane flying in the clouds">
+                <figcaption>Biplane flying with clouds at sunset</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/bluehousefield500.jpg"
+                    alt="blue farmhouse in large rolling field">
+                <figcaption>Big fluffly clouds looking over a sunlit field</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/cloudtunnel500.jpg"
+                    alt="clouds in circular formation">
+                <figcaption>Stormy clouds forming a tunnel in the sky</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/icebranch500.jpg"
+                    alt="small branch covered in ice">
+                <figcaption>A single small branch covered in ice</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/nightlightning500.jpg"
+                    alt="lightning strike at night">
+                                    <figcaption>Nightime storm produces cloud lightning</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/puddlepeople500.jpg"
+                    alt="reflection of people in a puddle">
+                <figcaption>People out for a walk caught in a puddle reflection</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/rainboots500.jpg"
+                    alt="child's rainboots and umbrella">
+                <figcaption>Rainboots and an umbrella enjoying the rain alone</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/rainbowfarm500.jpg" alt="rainbow over a field">
+                <figcaption>Large clouds and a rainbow over farmhouse and field</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder500.jpg" data-src="images/suntrees500.jpg"
+                    alt="sun flare in the middle of trees">
+                <figcaption>Sunlight flaring through the trees at sunset</figcaption>
+            </figure>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <div class=contactinfo>
+                <p>27 N. State Street</p>
+                <p>Preston, Idaho 83262</p>
+                <p>&#9742; 208.598.6874</p>
+                <p>&#9993; contact@weatherwonder.com</p>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=27%20n%20state%20street%2C%20preston%20id&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.embedgooglemap.net/en/"></a></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        &#169;2020 Weather Wonder| Attributions| Meigan First <br>
+        <span id="curDate"></span>
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lazyload.js"></script>
+
+    <script src="js/webfont.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+table,
+tr,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    box-shadow: 10px 10px 10px #628ca6
+}
+
+thead {
+    background-color: #628ca6;
+    color: white;
+}
+
+thead [colspan] {
+    background-color: #7fb9c2;
+    color: black;
+    font-size: 1.75em;
+}
+
+tbody {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tbody tr #metgoal {
+    background-color: #628ca6;
+    color: white;
+}
+
+tfoot {
+    font-size: .75em;
+    background-color: #7fb9c2;
+    font-weight: bold;
+}
