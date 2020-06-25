@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center | WeatherWonder.com</title>
+    <meta name="description"
+        content="Form page for users to submit local weather information. WDD 230, Spring 2020. Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weather_icon.png" alt="Weather Wonder icon">
+        <div class="header">
+            <h1>Weather Wonder</h1>
+            <div class="motto">Wonder no more! Know!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston_6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a class="active" href="#">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>Name* <input type="text" name="name" pattern=[A-Za-z]{5} required></label>
+                <label>Email* <input type="email" name="email" placeholder="something@email.com" required></label>
+                <label>Phone Number* <input type="tel" name="phone" required></label>
+                <label>ZIP Code* <input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Data</legend>
+                <label>Storm Date <input type="date" name="sdate"></label>
+                <label>Storm Type <input list="stype" name="stormtype">
+                    <datalist id="stype">
+                        <option value="flash">Flash Flood</option>
+                        <option value="fog">Fog</option>
+                        <option value="hail">Hail</option>
+                        <option value="hurricane">Hurricane</option>
+                        <option value="rain">Rain</option>
+                        <option value="snow">Snow</option>
+                        <option value="thunderstorm">Thunderstorm</option>
+                        <option value="tornado">Tornado</option>
+                    </datalist></label>
+                <label>Storm Severity (0-10) <input type="range" name="severity" min="0" max="10"></label>
+                <label>Storm Region <select name="region">
+                        <option value="none">Select Region</option>
+                        <option value="fish">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                    </select></label>
+                <div> Are you in danger? </div>
+                <label><input type="radio" name="danger" value="yes">Yes</label>
+                <label><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label><input type="radio" name="danger" value="no">No</label>
+            </fieldset>
+            <label>Additional Information or Comments<textarea name="additional"></textarea></label>
+            <input type="submit" value="Send My Storm Alert" class="submitBtn">
+        </form>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <div class=contactinfo>
+                <p>27 N. State Street</p>
+                <p>Preston, Idaho 83262</p>
+                <p>&#9742; 208.598.6874</p>
+                <p>&#9993; contact@weatherwonder.com</p>
+            </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=27%20n%20state%20street%2C%20preston%20id&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://www.embedgooglemap.net/en/"></a></div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        &#169;2020 Weather Wonder| Attributions| Meigan First <br>
+        <span id="curDate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+</body>
+
+</html>
