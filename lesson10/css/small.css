@@ -126,7 +126,6 @@ border: 2px solid var(--secondary-color);
 text-align: center;
 margin: 10px auto;
 max-width: 550px;
-
 }
 
 .towndata h3{
@@ -157,7 +156,7 @@ max-width: 550px;
 
 .summary {
     position: absolute;
-    top: 25px;
+    top: 5px;
     right: 10px;
     border: 2px solid var(--primary-color);
     background-color: rgba(205, 139, 118, .85);
