@@ -10,6 +10,17 @@ fetch(currentURL)
         document.getElementById("humidity").textContent = jsObject.main.humidity;
         document.getElementById("speed").textContent = jsObject.wind.speed.toFixed(0);
 
+        var t = document.getElementById("currentTemp").textContent;
+        var s = document.getElementById("speed").textContent;
+        var f;
+        if (t <= 50 && s > 3) {
+            f = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
+        } else {
+            f = "N/A";
+        }
+        console.log("Found windchill -> " + f);
+        document.getElementById("chill").innerHTML = Math.round(f);
+
     });
 
 const forcastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=2daa9d071489be411f57523f3d6ec725&units=imperial";
@@ -24,9 +35,9 @@ fetch(forcastURL)
             let d = new Date(fiveday[i].dt_txt);
             const imagesrc = "https://openweathermap.org/img/w/" + fiveday[i].weather[0].icon + ".png";
             const imagealt = fiveday[i].weather[0].description;
-            document.getElementById("day[i]").textContent = weekday[d.getDay()];
-            document.getElementById("icon[i]").setAttribute("src", imagesrc);
-            document.getElementById("icon[i]").setAttribute("alt", imagealt);
-            document.getElementById("temp[i]").textContent = fiveday[i].main.temp + "&#176;F";
+            document.getElementById("day"+ i).textContent = weekday[d.getDay()];
+            document.getElementById("icon"+ i).setAttribute("src", imagesrc);
+            document.getElementById("icon" + i).setAttribute("alt", imagealt);
+            document.getElementById("temp" + i).textContent = fiveday[i].main.temp;
         }
     });
