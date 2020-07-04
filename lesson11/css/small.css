@@ -140,6 +140,7 @@ max-width: 550px;
     width: 100%;
     max-width: 500px;
 }
+
 /* Preston Page*/
 .herosection {
     position: relative;
@@ -160,6 +161,7 @@ max-width: 550px;
     right: 10px;
     border: 2px solid var(--primary-color);
     background-color: rgba(205, 139, 118, .85);
+    padding: 15px;
 }
 
 .fiveday {
@@ -255,24 +257,7 @@ form input.submitBtn{
 }
 
 /*Contact Us*/
-/*Google specified CSS. DO NOT MESS WITH THIS!
-.mapouter {
-    position: relative;
-    text-align: right;
-   height: 500px;
-    width: 600px;
-    width: 50%;
-}
-
-.gmap_canvas {
-    overflow: hidden;
-    background: none !important;
-    height: 500px;
-    width: 600px;
-}
-
-End Google CSS*/
-.contact{
+ .contact{
     display: grid;
     align-items: center;
     justify-content: center;
