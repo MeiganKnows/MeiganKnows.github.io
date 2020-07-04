@@ -32,6 +32,7 @@
 
     .articleimg {
         float: right;
+        padding: 15px;
     }
 
     .gallery figure:hover {

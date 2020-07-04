@@ -139,6 +139,7 @@ max-width: 550px;
 .towndata img{
     width: 100%;
     max-width: 500px;
+    padding: 10px;
 }
 
 /* Preston Page*/
