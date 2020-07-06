@@ -13,11 +13,11 @@ fetch(currentURL)
         var s = document.getElementById("speed").textContent;
         var f;
         if (t <= 50 && s > 3) {
-            f = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
+            f = Math.round(35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16));
         } else {
             f = "N/A";
         }
-        document.getElementById("chill").innerHTML = Math.round(f);
+        document.getElementById("chill").innerHTML = f;
 
     });
 
@@ -39,3 +39,24 @@ fetch(forcastURL)
             document.getElementById("temp" + i).textContent = fiveday[i].main.temp;
         }
     });
+
+    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
+    fetch(requestURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            console.table(jsonObject); //temporary checking for valid response and data parsing
+            const towndata = jsonObject["towns"];
+            for (let i = 0; i < towndata.length; i++) {
+                if (towndata[i].name == "Preston") {
+                   for (let x = 0; x < towndata[i].events.length; x++) {
+                        let p = document.createElement("p");
+                        p.textContent = towndata.event;
+                        document.querySelector("section.events").appendChild(p);
+    
+                    }
+                }
+            }
+        });

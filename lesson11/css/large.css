@@ -50,32 +50,29 @@
     }
 
     .contactinfo {
-       grid-column: 2/3;
-       padding: 10px;
+        grid-column: 2/3;
+        padding: 10px;
     }
 
-    .contact img{
+    .contact img {
         grid-column: 1/2;
         grid-row: 2/3;
         justify-self: right;
     }
 
-    /*.mapouter {
-        grid-row: 2/3;
-        grid-column: 1/2;
-        width: 50%;
-    }*/
-.towndata{
-    display: flex;
-}
 
-.towndata section, .towndata section:nth-child(even){
-    flex-direction: column;
+    .towndata {
+        display: flex;
     }
 
-.towndata img{
-    max-width: 100%;
-}
+    .towndata section,
+    .towndata section:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .towndata img {
+        max-width: 100%;
+    }
 
 
 
