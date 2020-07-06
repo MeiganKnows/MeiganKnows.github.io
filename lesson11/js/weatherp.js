@@ -27,36 +27,16 @@ fetch(forcastURL)
     .then((response) => response.json())
     .then((jsObject2) => {
         const fiveday = jsObject2.list.filter(x => x.dt_txt.includes("18:00:00"));
-        
+
         for (i = 0; i < fiveday.length; i++) {
-           const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             let d = new Date(fiveday[i].dt_txt);
             const imagesrc = "https://openweathermap.org/img/w/" + fiveday[i].weather[0].icon + ".png";
             const imagealt = fiveday[i].weather[0].description;
-            document.getElementById("day"+ i).textContent = weekday[d.getDay()];
-            document.getElementById("icon"+ i).setAttribute("src", imagesrc);
+            document.getElementById("day" + i).textContent = weekday[d.getDay()];
+            document.getElementById("icon" + i).setAttribute("src", imagesrc);
             document.getElementById("icon" + i).setAttribute("alt", imagealt);
             document.getElementById("temp" + i).textContent = fiveday[i].main.temp;
         }
     });
 
-    const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
-
-    fetch(requestURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (jsonObject) {
-            console.table(jsonObject); //temporary checking for valid response and data parsing
-            const towndata = jsonObject["towns"];
-            for (let i = 0; i < towndata.length; i++) {
-                if (towndata[i].name == "Preston") {
-                   for (let x = 0; x < towndata[i].events.length; x++) {
-                        let p = document.createElement("p");
-                        p.textContent = towndata.event;
-                        document.querySelector("section.events").appendChild(p);
-    
-                    }
-                }
-            }
-        });

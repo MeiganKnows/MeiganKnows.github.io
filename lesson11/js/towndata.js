@@ -5,11 +5,10 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        //console.table(jsonObject); //temporary checking for valid response and data parsing
         const towndata = jsonObject["towns"];
         for (let i = 0; i < towndata.length; i++) {
             if (towndata[i].name == "Preston" || towndata[i].name == "Soda Springs" || towndata[i].name == "Fish Haven") {
-                console.log[towndata];
+                
                 let card = document.createElement("section");
                 let data = document.createElement("div");
                 let h3 = document.createElement("h3");
@@ -18,6 +17,7 @@ fetch(requestURL)
                 let p2 = document.createElement("p");
                 let p3 = document.createElement("p");
                 let img = document.createElement("img");
+                
 
                 h3.textContent = towndata[i].name;
                 h4.textContent = towndata[i].motto;
@@ -26,7 +26,7 @@ fetch(requestURL)
                 p3.textContent = "Average Rainfall: " + towndata[i].averageRainfall;
                 img.setAttribute("src", "images/" + towndata[i].name + "500.jpg");
                 img.setAttribute("alt", "Beautiful picture of " + towndata[i].name);
-
+                
                 data.appendChild(h3);
                 data.appendChild(h4);
                 data.appendChild(p1);
@@ -36,6 +36,8 @@ fetch(requestURL)
                 card.appendChild(img);
 
                 document.querySelector("div.towndata").appendChild(card);
+
+                
             }
         }
     });
