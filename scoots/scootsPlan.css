@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --primary-color: #ddfff7;
+    --secondary-color: #462255;
+    --accent1-color: #93e1d8;
+    --accent2-color: #722308;
+    --accent3-color: #f5e0ad;
+    --heading-font: "Amatic SC", cursive;
+    --paragraph-font: "Josefin Sans", Ariel, sans-serif;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+    font-size: 2em;
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    padding: 1em;
+    font-size: 16px;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999 ;
+}
+
+.colors td {
+    width: 20%;
+    height: 3em ;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+    color: white;
+}
+
+.accent3 {
+    background-color: var(--accent3-color);
+}
+
+nav {
+    background-color: var(--accent2-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em ;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex ;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px ;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    background-color:var(--accent3-color);
+}
+
+footer{
+    background-color: var(--accent1-color);
+    height: auto;
+    min-height: 30px;
+    text-align: center;
+}

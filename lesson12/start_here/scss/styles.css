@@ -70,7 +70,8 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -111,7 +112,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -307,7 +309,8 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -345,7 +348,8 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -440,7 +444,6 @@ html {
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -456,11 +459,13 @@ header {
   background-color: #e4c517;
   padding: 1rem 2%;
 }
+
 header h1 {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 header h2 {
   margin: 0;
   font-size: 1.2rem;
@@ -470,16 +475,20 @@ header h2 {
 nav {
   background-color: #111;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav li {
   list-style-type: none;
 }
+
 nav li.active {
   background-color: #333;
 }
+
 nav a {
   display: block;
   padding: .8rem 0;
@@ -488,6 +497,7 @@ nav a {
   text-align: center;
   text-decoration: none;
 }
+
 nav a:hover {
   background-color: #444;
 }
@@ -496,17 +506,21 @@ main {
   display: block;
   padding: 1rem 2%;
 }
+
 main h1 {
   color: #e4c517;
   font-weight: 300;
 }
+
 main figure {
   margin: 0;
   width: 100%;
 }
+
 main figure img {
   width: 100%;
 }
+
 main figcaption {
   text-align: center;
   font-size: .8rem;
@@ -530,45 +544,44 @@ footer {
     width: 25%;
     float: left;
   }
-
   main figure {
     float: right;
     width: 48%;
     margin-left: 2%;
     padding-bottom: .5rem;
   }
-
   div.news {
     clear: both;
-    column-count: 2;
-    column-rule: 1px solid #ddd;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-rule: 1px solid #ddd;
+            column-rule: 1px solid #ddd;
   }
 }
+
 /* end of media query */
 @media only screen and (min-width: 1028px) {
   header, nav, main, footer {
     max-width: 1200px;
     margin: auto;
   }
-
   nav ul {
     padding-left: 2%;
   }
-
   nav li {
     width: auto;
   }
-
   nav a {
     padding: .5rem 1rem;
   }
-
   main figure {
     width: 31%;
   }
-
   div.news {
-    column-count: 3;
+    -webkit-column-count: 3;
+            column-count: 3;
   }
 }
+
 /* end of media query */
+/*# sourceMappingURL=styles.css.map */
