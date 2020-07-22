@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ~Scoots | Scooters for Rent in Cozumel</title>
+    <meta name="description"
+        content="Rent scooters and other vehicles for personal transportation around Couzumel, Mexico. Author: Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/scootslogo150.jpg" alt="~Scoots icon">
+        <div class="header">
+            <h1>~Scoots</h1>
+            <div class="motto">Scoot around in style!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=herosection>
+            <picture class=heropic>
+                <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                <source media="(max-width: 900px)" srcset="images/hero900.jpg">
+                <img src="images/hero1150.jpg" alt="Cozumel shoreline at sunset">
+            </picture>
+        </section>
+        <h2>Contact Us</h2>
+        Phone: +52 987 872 5555
+        Email: rentals@scoots.com.mx
+        <h2>Locations</h2>
+        <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Located at the Joaquín Mall, Av. Juarez 99
+            Esq, 5a Av. Nte, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907.6287775272936!2d-86.9495516163984!3d20.510439178048443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59ceedce9cd7%3A0x65e6e9cc62abc79!2sJoaqu%C3%ADn%20Mall!5e0!3m2!1sen!2sus!4v1595383295523!5m2!1sen!2sus"
+                width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7610159745545!2d-86.97669668545024!3d20.47500658630094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5748fba49403%3A0x482bf8655168bfc4!2sQuintana%20Roo%20C-1%201a%2C%2077600%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sus!4v1595382981566!5m2!1sen!2sus"
+                width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+
+
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="txt">Name*  <input type="text" name="name" required></label>
+                    <label class="txt">Email*  <input type="email" name="email" placeholder="something@email.com" required></label>
+                    <label class="txt">Question or Comment<textarea name="comment"></textarea></label>
+                    <input type="submit" value="Send My Comment" class="submitBtn">    
+                </fieldset>
+            </form>
+    </main>
+    <footer>
+        <div class="locations">
+            <h2>Locations</h2>
+            <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Av Lic Benito Juárez 2, Centro, 77600
+                San Miguel de Cozumel, Q.R., Mexico</p>
+            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Logo"></a>
+        </div>
+    </footer>
+</body>

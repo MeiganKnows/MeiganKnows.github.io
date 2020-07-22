@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ~Scoots | Scooters for Rent in Cozumel</title>
+    <meta name="description"
+        content="Rent scooters and other vehicles for personal transportation around Couzumel, Mexico. Author: Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/scootslogo150.jpg" alt="~Scoots icon">
+        <div class="header">
+            <h1>~Scoots</h1>
+            <div class="motto">Scoot around in style!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=herosection>
+            <picture class=heropic>
+                <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                <source media="(max-width: 900px)" srcset="images/hero900.jpg">
+                <img src="images/hero1150.jpg" alt="Cozumel shoreline at sunset">
+            </picture>
+        </section>
+        
+        <section>
+            <h2>Thank you for your reservation!</h2>
+            <p>Please let us know how you would like to make your payment.</p>
+        </section>
+        <form method = "get" action="thanks.html" >
+            <fieldset>
+                <legend>Deposit information</legend>
+                <label><input type="radio" name="pay" value="pal">PayPal</label> 
+                <label><input type="radio" name="pay" value="credit">Credit Card</label>
+                <label><input type="radio" name="pay" value="debit">Debit Card</label>
+                <label><input type="radio" name="pay" value="google">Google Pay</label>
+                <label><input type="radio" name="pay" value="cash">Cash</label>
+            </fieldset>
+            <input type="submit" value="Submit Deposit Informaiton" class="submitBtn">
+            <p> To pay your deposit in cash, please come to either of our convient locations. If paying by electronic means, you will be contacted by our staff for the details.</p>
+        </form>
+        <a href="index.html">Return to homepage</a>
+        </main>
+        </body>
+        </html>
+        

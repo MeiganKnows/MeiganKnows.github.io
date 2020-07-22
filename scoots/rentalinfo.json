@@ -1,0 +1,45 @@
+{
+    "rentals": [{
+        "type": "Honda Metro Scooter",
+        "maxperson": 1,
+        "reservehalf": 20,
+        "reservewhole": 30,
+        "walkinhalf": 25,
+        "walkinwhole": 35
+    }, {
+        "type": "Honda Dio Scooter",
+        "maxperson": 2,
+        "reservehalf": 30,
+        "reservewhole": 40,
+        "walkinhalf": 35,
+        "walkinwhole": 45
+    }, {
+        "type": "Honda PCX150 Scooter",
+        "maxperson": 2,
+        "reservehalf": 40,
+        "reservewhole": 50,
+        "walkinhalf": 45,
+        "walkinwhole": 55
+    }, {
+        "type": "Honda Pioneer ATV",
+        "maxperson": 4,
+        "reservehalf": 50,
+        "reservewhole": 70,
+        "walkinhalf": 60,
+        "walkinwhole": 80
+    }, {
+        "type": "Jeep Wrangler 4-door",
+        "maxperson": 5,
+        "reservehalf": 70,
+        "reservewhole": 100,
+        "walkinhalf": 85,
+        "walkinwhole": 125
+    }, {
+        "type": "Jeep Wrangler 2-door",
+        "maxperson": 4,
+        "reservehalf": 60,
+        "reservewhole": 85,
+        "walkinhalf": 70,
+        "walkinwhole": 90
+    }]
+}

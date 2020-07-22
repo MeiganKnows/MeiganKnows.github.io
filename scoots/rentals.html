@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ~Scoots | Scooters for Rent in Cozumel</title>
+    <meta name="description"
+        content="Rent scooters and other vehicles for personal transportation around Couzumel, Mexico. Author: Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/scootslogo150.jpg" alt="~Scoots icon">
+        <div class="header">
+            <h1>~Scoots</h1>
+            <div class="motto">Scoot around in style!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="#">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=herosection>
+            <picture class=heropic>
+                <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                <source media="(max-width: 900px)" srcset="images/hero900.jpg">
+                <img src="images/hero1150.jpg" alt="Cozumel shoreline at sunset">
+            </picture>
+        </section>
+        <section class=rentaldata>
+            <table>
+                <caption>Rental Information & Prices</caption>
+                <tr>
+                    <th colspan="2"> </th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Walk-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. People</th>
+                    <th>Half Day</th>
+                    <th>Whole Day</th>
+                    <th>Half Day</th>
+                    <th>whole Day</th>
+                </tr>
+                <tr>
+                    <td><span id="type1"></span></td>
+                    <td><span id="max1"></span></td>
+                    <td>&#36;<span id="rhalf1"></span></td>
+                    <td>&#36;<span id="rwhole1"></span></td>
+                    <td>&#36;<span id="whalf1"></span></td>
+                    <td>&#36;<span id="wwhole1"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="type2"></span></td>
+                    <td><span id="max2"></span></td>
+                    <td>&#36;<span id="rhalf2"></span></td>
+                    <td>&#36;<span id="rwhole2"></span></td>
+                    <td>&#36;<span id="whalf2"></span></td>
+                    <td>&#36;<span id="wwhole2"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="type3"></span></td>
+                    <td><span id="max3"></span></td>
+                    <td>&#36;<span id="rhalf3"></span></td>
+                    <td>&#36;<span id="rwhole3"></span></td>
+                    <td>&#36;<span id="whalf3"></span></td>
+                    <td>&#36;<span id="wwhole3"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="type4"></span></td>
+                    <td><span id="max4"></span></td>
+                    <td>&#36;<span id="rhalf4"></span></td>
+                    <td>&#36;<span id="rwhole4"></span></td>
+                    <td>&#36;<span id="whalf4"></span></td>
+                    <td>&#36;<span id="wwhole4"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="type5"></span></td>
+                    <td><span id="max5"></span></td>
+                    <td>&#36;<span id="rhalf5"></span></td>
+                    <td>&#36;<span id="rwhole5"></span></td>
+                    <td>&#36;<span id="whalf5"></span></td>
+                    <td>&#36;<span id="wwhole5"></span></td>
+                </tr>
+                <tr>
+                    <td><span id="type6"></span></td>
+                    <td><span id="max6"></span></td>
+                    <td>&#36;<span id="rhalf6"></span></td>
+                    <td>&#36;<span id="rwhole6"></span></td>
+                    <td>&#36;<span id="whalf6"></span></td>
+                    <td>&#36;<span id="wwhole6"></span></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Logo"></a>
+        </div>
+        <div class="locations">
+            <h2>Locations</h2>
+            <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Located at the Joaquín Mall, Av. Juarez
+                99
+                Esq, 5a Av. Nte, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
+        </div>
+        <div class=reference>
+            <p>Last Modified: <span id="modDate"></span></p>
+            <a href="references.html">References & Attributions</a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/rentalinfo.js"></script>
+    <script src="js/date.js"></script>
+
+</body>

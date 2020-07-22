@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | ~Scoots | Scooters for Rent in Cozumel</title>
+    <meta name="description"
+        content="Rent scooters and other vehicles for personal transportation around Couzumel, Mexico. Author: Meigan First">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/scootslogo150.jpg" alt="~Scoots icon">
+        <div class="header">
+            <h1>~Scoots</h1>
+            <div class="motto">Scoot around in style!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class=herosection>
+            <picture class=heropic>
+                <source media="(max-width: 500px)" srcset="images/hero500.jpg">
+                <source media="(max-width: 900px)" srcset="images/hero900.jpg">
+                <img src="images/hero1150.jpg" alt="Cozumel shoreline at sunset">
+            </picture>
+            <div class="action">
+                <h2>Don't Miss Out! <br> Book your rental now!</h2>
+                <button>Reserve Now!</button>
+            </div>
+        </section>
+        <section class=weather>
+            <div class="summary">
+                <h3>Weather Summary</h3>
+                <p>Currently:<span id=currentTemp></span>&#176;F,<span id="currentDesc"></span></p>
+                <p>High: <span id="temp"></span>&#176;F</p>
+                <p>Wind Chill: <span id="chill"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="speed"></span> mph</p>
+            </div>
+        </section>
+        <section class=fiveday>
+            <h2>5 day forcast</h2>
+            <table>
+                <tr>
+                    <th id="day0"></th>
+                    <th id="day1"></th>
+                    <th id="day2"></th>
+                    <th id="day3"></th>
+                    <th id="day4"></th>
+                </tr>
+                <tr>
+                    <td><img id="icon0" src="#" alt=""><br><span id="temp0"></span>&#176;F
+                    </td>
+                    <td><img id="icon1" src="#" alt=""><br><span id="temp1"></span>&#176;F
+                    </td>
+                    <td><img id="icon2" src="#" alt=""><br><span id="temp2"></span>&#176;F
+                    </td>
+                    <td><img id="icon3" src="#" alt=""><br><span id="temp3"></span>&#176;F
+                    </td>
+                    <td><img id="icon4" src="#" alt=""><br><span id="temp4"></span>&#176;F
+                    </td>
+                </tr>
+            </table>
+        </section>
+        </section>
+
+        <section class=rental>
+            <h2>Check out our fun rental options!</h2>
+            <figure>
+                <img src="images/hondaMetro600.jpg" alt="Honda Metro Scooter">
+                <figcaption>Honda Metropolitan Scooter <br> 49cc <br> 1 person</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hondaDio533.jpg" alt="Honda Dio Scooter">
+                <figcaption>Honda Dio <br> 110cc <br> 2 people</figcaption>
+            </figure>
+            <img src="images/lighthouse600.jpg" alt="Lighthouse in the shopping district">
+            <figure>
+                <img src="images/hondaPCX150_600.jpg" alt="Honda PCX150 Scooter">
+                <figcaption>Honda PCX150 <br> 149cc <br> 2 people</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pioneerATV600.jpg" alt="Pioneer ATV">
+                <figcaption>Honda Pioneer 1000 <br> 4 people</figcaption>
+            </figure>
+            <img src="images/truck600.jpg" alt="Old style truck on the beach">
+            <figure>
+                <img src="images/jeep4_600.jpg" alt="4 Door Jeep Wrangler">
+                <figcaption>4-door Jeep Wrangler <br> Manual with A/C <br> 5 people</figcaption>
+            </figure>
+            <figure>
+                <img src="images/jeep2_600.jpg" alt="2 Door Jeep Wrangler">
+                <figcaption>2-door Jeep Wrangler <br> Manual, Open Air <br> 4 people</figcaption>
+            </figure>
+            <img src="images/shoreline600.jpg" alt="Huts on the shoreline">
+        </section>
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Logo"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Logo"></a>
+        </div>
+        <div class="locations">
+            <h2>Locations</h2>
+            <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Located at the Joaquín Mall, Av. Juarez 99
+                Esq, 5a Av. Nte, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
+        </div>
+        <div class=reference>
+            <p>Last Modified: <span id="modDate"></span></p>
+            <a href="references.html">References & Attributions</a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/weather.js"></script>
+</body>

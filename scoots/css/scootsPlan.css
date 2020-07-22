@@ -42,6 +42,9 @@ p {
     padding: 1em;
     font-size: 16px;
 }
+ li{
+     font-family: var(--paragraph-font);
+ }
 
 .colors {
     width: 100%;
@@ -107,6 +110,12 @@ nav a:hover {
     color: var(--secondary-color);
     background-color:var(--accent3-color);
 }
+.wireframe{
+    width: 75%;
+    text-align: center;
+}
+
+li
 
 footer{
     background-color: var(--accent1-color);

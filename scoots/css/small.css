@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --primary-color: #ddfff7;
+    --secondary-color: #462255;
+    --accent1-color: #93e1d8;
+    --accent2-color: #722308;
+    --accent3-color: #f5e0ad;
+    --heading-font: "Amatic SC", cursive;
+    --paragraph-font: "Josefin Sans", Ariel, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+p,
+ul,
+form {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+/*------------------------------Header-------------------------------------------*/
+header {
+    background-color: var(--accent1-color);
+    text-align: center;
+    display: flex;
+}
+
+header img {
+    width: 100px;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    padding: 5px;
+    align-self: center;
+}
+
+.motto {
+    font-family: var(--paragraph-font);
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+/*----------------------------Navigation----------------------------------------*/
+nav {
+    background-color: var(--accent2-color);
+}
+
+nav button {
+    margin: .2em 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6em;
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    padding: .8em 2%;
+    min-width: 70px;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    color: var(--primary-color);
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    background-color: var(--accent3-color);
+}
+
+.hide{
+    display: none; 
+}
+
+.active {
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+/*-----------------------------Main section--------------------------------------*/
+main {
+    max-width: 98%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+/*-----------------------------Hero Image---------------------------------------*/
+.herosection {
+    position: relative;
+}
+
+.heropic {
+    max-width: 35em;
+}
+
+.heropic img {
+    width: 100%;
+}
+
+/*-----------------------------Call to Action------------------------------------*/
+.action {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-align: center;
+    background-color: rgba(70, 34, 85, .4);
+    /*pale purple*/
+}
+
+.action h2 {
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color: var(--accent3-color);
+}
+
+/*--------------------------------------Weather-------------------------------------*/
+.weather {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.summary{
+    border: 2px solid var(--secondary-color);
+    box-shadow: 10px 10px 10px var(--secondary-color);
+}
+.fiveday {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    padding: 5px;
+    border: 2px solid var(--accent2-color);
+    text-align: center;
+}
+
+/*---------------------------------------Rental--------------------------------------*/
+.rental {
+    max-width: 35em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rental figcaption {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.rental img {
+    max-width: 100%;
+}
+
+/*-------------------------------------Footer---------------------------------------*/
+footer {
+
+    background-color: var(--accent1-color);
+    position: relative;
+}
+
+.locations {
+    padding: 10px;
+}
+
+.social {
+    display: inline;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+
+.social img {
+    max-width: 40px;
+    padding: 10px;
+}
