@@ -1,15 +1,15 @@
-const data = "rentalinfo.json";
+const data = "wireframes/rentalinfo.json";
 
 fetch(data)
     .then((response) => response.json())
     .then((jsObject) => {
-        for (i = 0; i < jsObject.length; i++) {
-            document.getElementById("type" + i).textContent = jsObject[i].type;
-            document.getElementById("max" + i).textContent = jsOjject[i].maxperson;
-            document.getElementById("rhalf" + i).textContent = jsObject[i].reservehalf;
-            document.getElementById("rwhole" + i).textContent = jsObject[i].reservewhole;
-            document.getElementById("whlaf" + i).textContent = jsObject[i].walkinhalf;
-            document.getElementById("wwhole" + i).textContent = jsObject[i].walkinwhole;
+        for (i = 0; i < jsObject.rentals.length; i++) {
+            document.getElementById("type" + i).textContent = jsObject.rentals[i].type;
+            document.getElementById("max" + i).textContent = jsObject.rentals[i].maxperson;
+            document.getElementById("rhalf" + i).textContent = jsObject.rentals[i].reservehalf;
+            document.getElementById("rwhole" + i).textContent = jsObject.rentals[i].reservewhole;
+            document.getElementById("whalf" + i).textContent = jsObject.rentals[i].walkinhalf;
+            document.getElementById("wwhole" + i).textContent = jsObject.rentals[i].walkinwhole;
         }
 
     });
