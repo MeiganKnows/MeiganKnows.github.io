@@ -1,0 +1,97 @@
+@media only screen and (min-width: 35em) {
+
+    p,
+    ul,
+    form {
+        font-size: 1.2em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5em;
+    }
+
+    /*------------------------------Header-------------------------------------------*/
+    header img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    /*----------------------------Navigation----------------------------------------*/
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+        margin: 0;
+    }
+
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    nav ul li a {
+        padding: .8em 1em;
+        text-align: center;
+    }
+
+
+    /*-----------------------------Call to Action------------------------------------*/
+    .action {
+        top: 15px;
+        right: 20px;
+    }
+
+    .action h2 {
+        font-size: 2em;
+    }
+
+    /*---------------------------------------Rental--------------------------------------*/
+    .rental {
+        max-width: 64em;
+        grid-template-columns: 50% 50%;
+        grid-gap: 0;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .rental img:nth-child(3n) {
+        grid-column: span 2;
+    }
+
+    /*-----------------------------------Tours------------------------------------------*/
+    .tours {
+        max-width: 65em;
+    }
+
+    .tours img {
+        max-width: 40%;
+        float: right;
+        padding: 10px;
+    }
+
+    .tours img:nth-child(even) {
+        float: left;
+    }
+
+    /*-----------------------------------Reservations-----------------------------------*/
+    form label.txt input {
+        max-width: 30em;
+    }
+
+    form fieldset {
+        margin: 0 auto;
+    }
+
+    /*-------------------------------------Contact---------------------------------------*/
+    
+    
+}

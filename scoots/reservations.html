@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | ~Scoots | Scooters for Rent in Cozumel</title>
+    <title>Reservations | ~Scoots | Scooters for Rent in Cozumel</title>
     <meta name="description"
         content="Rent scooters and other vehicles for personal transportation around Couzumel, Mexico. Author: Meigan First">
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -25,22 +25,23 @@
     <nav>
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
-            <li><a class="active" href="#">Home</a></li>
+            <li><a  href="index.html">Home</a></li>
             <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
+            <li><a class="active" href="#">Reservations</a></li>
             <li><a href="tours.html">Tours</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section class=herosection>
+        <div class=herosection>
             <picture class=heropic>
                 <source media="(max-width: 500px)" srcset="images/hero500.jpg">
                 <source media="(max-width: 900px)" srcset="images/hero900.jpg">
                 <img src="images/hero1150.jpg" alt="Cozumel shoreline at sunset">
             </picture>
-        </section>
+        </div>
         <section>
+            <h2>Rental Information</h2>
             <ul>
                 <li>All scooter passengers must be at least 12 years old</li>
                 <li>Must have valid driver license present at rental pickup</li>
@@ -56,6 +57,7 @@
         <section>
             <h2>Submit your Reservation</h2>
             <form method="get" action="thanks2.html">
+               <img class ="filler" src="images/sunset400.jpg" alt="">
                 <fieldset>
                     <legend>User Information</legend>
                     <label class="txt">Name* <input type="text" name="name" required></label>
@@ -65,33 +67,46 @@
                     <label class="txt">Home Country* <input type="text" name="country" required></label>
                     <label class="txt">Cruise Line <input type="text" name="cruise"></label>
                 </fieldset>
+                <img class='filler' src="images/palms400.jpg" alt="Old style truck on the beach.">
                 <fieldset>
                     <legend>Rental Information</legend>
                     <label class="txt">Rental Start Date<input type="date" name="startdate"></label>
-                    <label class="txt">Rental Days<input type="number" name="rentdays"></label>
+                    <label class="txt">Rental Days(number)<input type="number" name="rentdays"></label>
                     <div>Select desired rental type</div>
-                    <label><input type="radio" name="type" value="metro">Honda Metro Scooter</label>
-                    <label><input type="radio" name="type" value="dio">Honda Dio Scooter</label>
-                    <label><input type="radio" name="type" value="pcx">Honda PCX150 Scooter</label>
-                    <label><input type="radio" name="type" value="atv">Honda Pioneer ATV</label>
-                    <label><input type="radio" name="type" value="jeep4">4-Door Jeep Wrangler</label>
-                    <label><input type="radio" name="type" value="jeep2">2-Door Jeep Wrangler</label>
-                    <label class="txt">Quantity <input type="number" name="quant"></label>
+                    <label class = "sbs"><input type="radio" name="type" value="metro">  Honda Metro Scooter</label>
+                    <label class = "sbs"><input type="radio" name="type" value="dio">  Honda Dio Scooter</label>
+                    <label class = "sbs"><input type="radio" name="type" value="pcx">  Honda PCX150 Scooter</label>
+                    <label class = "sbs"><input type="radio" name="type" value="atv">  Honda Pioneer ATV</label>
+                    <label class = "sbs"><input type="radio" name="type" value="jeep4">  4-Door Jeep Wrangler</label>
+                    <label class = "sbs"><input type="radio" name="type" value="jeep2">  2-Door Jeep Wrangler</label>
+                    <label class="txt">Quantity<input type="number" name="quant"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="txt"> Special requests or accomidations, including dropoff requests.<textarea name="additional"></textarea> </label>
                 </fieldset>
                 <input type="submit" value="Submit Rental Request" class="submitBtn">
-        </section>
+        </form>
+            </section>
     </main>
     <footer>
-        <div class="locations">
-            <h2>Locations</h2>
-            <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Av Lic Benito Juárez 2, Centro, 77600
-                San Miguel de Cozumel, Q.R., Mexico</p>
-            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
-        </div>
         <div class="social">
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook logo"></a>
             <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Logo"></a>
             <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram Logo"></a>
         </div>
+        <div class="locations">
+            <h2>Locations</h2>
+            <p>Near Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel: Located at the Joaquín Mall, Av. Juarez 99
+                Esq, 5a Av. Nte, Centro, 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p>Near Terminal Puerta Maya: Quintana Roo C-1 1a, 77600 Q.R., Mexico</p>
+        </div>
+        <div class=reference>
+            <p>Last Modified: <span id="modDate"></span></p>
+            <a href="references.html">References & Attributions</a>
+        </div>
     </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/date.js"></script>
+    
 </body>
