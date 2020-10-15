@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+$heading-font: "Lora";
+$body-font: Helvetica,
+Arial,
+sans-serif;
+$blue: #6495ED;
+$pale: #FAEBD7;
+$yellow: #DEB887;
+
+@mixin center {
+    margin: 0 auto;
+}
+
+@mixin link-style($color, $text-dec: none) {
+    color: $color;
+    text-decoration: $text-dec;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font;
+    padding: 10px;
+}
+
+p {
+    font-family: $body-font;
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: $blue;
+    @include center;
+    text-align: right;
+
+    h1 a {
+        color: $pale;
+        text-decoration: none;
+        margin: 0 30px;
+    }
+
+    hr {
+        margin: 0 30px;
+    }
+}
+
+nav {
+    background-color: $blue;
+    font-family: $body-font;
+    @include center;
+
+    ul {
+        list-style-type: none;
+        @include center;
+
+        li a {
+            @include link-style($yellow);
+            margin: 0 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+nav a {
+    &:visited {
+        @include link-style($pale);
+    }
+
+    &:active {
+        @include link-style($yellow);
+    }
+
+    &:hover {
+        @include link-style(white, underline);
+    }
+}
+
+main {
+    background-color: $pale;
+    padding: 0;
+
+    a,
+    a:visited {
+        @include link-style($blue);
+    }
+}
+
+main a {
+    &:active {
+        @include link-style($yellow);
+    }
+
+    &:hover {
+        @include link-style($blue, underline);
+    }
+}
+
+article {
+    background-color: white;
+    max-width: 90%;
+    @include center;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.post-date {
+    font-family: $body-font;
+    color: grey;
+
+    img {
+        max-width: 75%;
+        text-align: center;
+    }
+}
+
+.post-content h2 a,
+.post-content h2 a:visited {
+    @include link-style(black);
+}
+
+.post-content h2 a {
+    &:active {
+        @include link-style($yellow);
+    }
+
+    &:hover {
+        @include link-style($blue, underline);
+    }
+}
+
+@media only screen and (min-width: 35em) {
+    header {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: $blue;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+
+    header h1 a,
+    nav ul li a {
+        margin: 0 20px;
+    }
+
+    main {
+        margin-left: 200px;
+        
+    }
+
+    article {
+        max-width: 450px;
+    }
+}

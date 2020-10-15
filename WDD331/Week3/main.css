@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora";
+  padding: 10px;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 15px;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #6495ED;
+  margin: 0 auto;
+  text-align: right;
+}
+header h1 a {
+  color: #FAEBD7;
+  text-decoration: none;
+  margin: 0 30px;
+}
+header hr {
+  margin: 0 30px;
+}
+
+nav {
+  background-color: #6495ED;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+nav ul li a {
+  color: #DEB887;
+  text-decoration: none;
+  margin: 0 30px;
+  line-height: 30px;
+}
+
+nav a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+nav a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+main {
+  background-color: #FAEBD7;
+  padding: 0;
+}
+main a,
+main a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+main a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+main a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+article {
+  background-color: white;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px grey;
+}
+
+.post-date {
+  font-family: Helvetica, Arial, sans-serif;
+  color: grey;
+}
+.post-date img {
+  max-width: 75%;
+  text-align: center;
+}
+
+.post-content h2 a,
+.post-content h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.post-content h2 a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+.post-content h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 35em) {
+  header {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6495ED;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  header h1 a,
+nav ul li a {
+    margin: 0 20px;
+  }
+
+  main {
+    margin-left: 200px;
+  }
+
+  article {
+    max-width: 450px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
