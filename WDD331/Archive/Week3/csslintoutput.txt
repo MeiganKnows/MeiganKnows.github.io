@@ -1,0 +1,5 @@
+
+main.css
+ 33:1  ×  Expected selector "header h1 a" to come before selector "main a:visited"   no-descending-specificity
+ 39:1  ×  Expected selector "nav ul li a" to come before selector "main a:visited"   no-descending-specificity
+

@@ -1,0 +1,34 @@
+
+main.css
+   2:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+   8:16  ×  Unexpected missing generic font family                               font-family-no-missing-generic-family-keyword
+  22:21  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+  26:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  27:10  ×  Expected "#FAEBD7" to be "#faebd7"                                   color-hex-case                               
+  31:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  36:21  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+  40:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  44:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  45:10  ×  Expected "#DEB887" to be "#deb887"                                   color-hex-case                               
+  52:10  ×  Expected "#FAEBD7" to be "#faebd7"                                   color-hex-case                               
+  55:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  56:10  ×  Expected "#DEB887" to be "#deb887"                                   color-hex-case                               
+  59:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  65:21  ×  Expected "#FAEBD7" to be "#faebd7"                                   color-hex-case                               
+  68:1   ×  Expected selector "main a" to come before selector "header h1 a"     no-descending-specificity                    
+  68:1   ×  Expected selector "main a" to come before selector "nav ul li a"     no-descending-specificity                    
+  68:1   ×  Expected selector "main a" to come before selector "nav a:visited"   no-descending-specificity                    
+  68:1   ×  Expected selector "main a" to come before selector "nav a:active"    no-descending-specificity                    
+  68:1   ×  Expected selector "main a" to come before selector "nav a:hover"     no-descending-specificity                    
+  68:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  70:10  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+  75:10  ×  Expected "#DEB887" to be "#deb887"                                   color-hex-case                               
+  78:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+  79:10  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+  94:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+ 106:10  ×  Expected "#DEB887" to be "#deb887"                                   color-hex-case                               
+ 109:1   ×  Expected empty line before rule                                      rule-empty-line-before                       
+ 110:10  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+ 122:23  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                               
+ 128:1   ×  Expected indentation of 2 spaces                                     indentation
+
