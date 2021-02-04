@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora";
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/*------------------------------Header-------------------------------------------*/
+header {
+  background-color: #6495ed;
+  margin: 0 auto;
+  text-align: right;
+}
+
+header h1 a {
+  color: #faebd7;
+  text-decoration: none;
+  margin: 10px 30px;
+}
+
+header hr {
+  margin: 0 30px;
+}
+
+/*----------------------------Navigation----------------------------------------*/
+nav {
+  background-color: #6495ed;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #deb887;
+  margin: 0 30px;
+  line-height: 30px;
+}
+
+nav a,
+nav a:visited {
+  color: #faebd7;
+  text-decoration: none;
+}
+
+nav a:active {
+  color: #deb887;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/*----------------------------------------------Main---------------------------------------------*/
+main {
+  background-color: #faebd7;
+  padding: 0;
+}
+
+main a,
+main a:visited {
+  color: #6495ed;
+  text-decoration: none;
+}
+
+main a:active {
+  color: #deb887;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+article {
+  background-color: white;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px grey;
+}
+figure{
+    max-width: 75%;
+}
+.post-date {
+  font-family: Helvetica, Arial, sans-serif;
+  color: grey;
+}
+
+.post-content img {
+  align-self: center;
+  width: 100%;
+}
+
+.post-content h2 a,
+.post-content h2 a:visited {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+ }
+
+.post-content h2 a:active {
+  color: #deb887;
+}
+
+.post-content h2 a:hover {
+  color: #6495ed;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 35em) {
+  header {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6495ed;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  header h1 a,
+  nav ul li a {
+    margin: 0 20px;
+    padding-right: 20px;
+  }
+
+  main {
+    margin-left: 200px;
+    padding: 0;
+  }
+  article {
+    max-width: 450px;
+  }
+}

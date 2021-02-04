@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+$heading-font: "Lora";
+$font-family: "Helvetica, Arial, sans-serif";
+$blue: #6495ed;
+$antique: #faebd7;
+$yellow: #deb887;
+$main-color: $blue; 
+$secondary-color: $antique;
+$tertiary-color: $yellow;
+h4,
+h5,
+h6 {
+  font-family: $heading-font;
+}
+
+p {
+  font-family: $font-family;
+  padding: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+/*------------------------------Header-------------------------------------------*/
+header {
+  background-color:$main-color;
+  margin: 0 auto;
+  text-align: right;
+  h1 a {
+    color: $secondary-color;
+    text-decoration: none;
+    margin: 10px 30px;
+  }
+  hr {
+    margin: 0 30px;
+  }
+}
+
+/*----------------------------Navigation----------------------------------------*/
+nav {
+  background-color: $main-color;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 10px 0;
+  nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    li a {
+      text-decoration: none;
+      color: $tertiary-color;
+      margin: 0 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+nav a,
+nav a:visited {
+  color: $secondary-color;
+  text-decoration: none;
+  :active {
+    color: $tertiary-color;
+    text-decoration: none;
+  }
+  :hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/*----------------------------------------------Main---------------------------------------------*/
+main {
+  background-color: $secondary-color;
+  padding: 0;
+}
+
+main a,
+main a:visited {
+  color: $main-color;
+  text-decoration: none;
+  :active {
+    color: $tertiary-color;
+  }
+  :hover {
+    text-decoration: underline;
+  }
+}
+article {
+  background-color: white;
+  max-width: 90%;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px grey;
+}
+figure {
+  max-width: 75%;
+}
+.post-date {
+  font-family: $font-family;
+  color: grey;
+}
+
+.post-content img {
+  align-self: center;
+  width: 100%;
+}
+
+.post-content h2 a,
+.post-content h2 a:visited {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  :active{
+    color: $tertiary-color;
+  }:hover{color: $main-color;
+  text-decoration: underline;}
+}
+
+@media only screen and (min-width: 35em) {
+  header {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $main-color;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  header h1 a,
+  nav ul li a {
+    margin: 0 20px;
+    padding-right: 20px;
+  }
+
+  main {
+    margin-left: 200px;
+    padding: 0;
+  }
+  article {
+    max-width: 450px;
+  }
+}
