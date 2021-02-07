@@ -6,7 +6,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora";
+  font-family: "Lora", serif;
 }
 
 p {
@@ -18,7 +18,7 @@ body {
   margin: 0;
 }
 
-/*------------------------------Header-------------------------------------------*/
+/* ------------------------------Header------------------------------------------- */
 header {
   background-color: #6495ed;
   margin: 0 auto;
@@ -35,7 +35,7 @@ header hr {
   margin: 0 30px;
 }
 
-/*----------------------------Navigation----------------------------------------*/
+/* ----------------------------Navigation---------------------------------------- */
 nav {
   background-color: #6495ed;
   font-family: Helvetica, Arial, sans-serif;
@@ -71,7 +71,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/*----------------------------------------------Main---------------------------------------------*/
+/* ----------------------------------------------Main--------------------------------------------- */
 main {
   background-color: #faebd7;
   padding: 0;
@@ -97,9 +97,11 @@ article {
   margin: 0 auto;
   box-shadow: 3px 3px 3px grey;
 }
-figure{
-    max-width: 75%;
+
+figure {
+  max-width: 75%;
 }
+
 .post-date {
   font-family: Helvetica, Arial, sans-serif;
   color: grey;
@@ -115,7 +117,7 @@ figure{
   color: black;
   text-decoration: none;
   padding: 10px;
- }
+}
 
 .post-content h2 a:active {
   color: #deb887;
@@ -149,6 +151,7 @@ figure{
     margin-left: 200px;
     padding: 0;
   }
+
   article {
     max-width: 450px;
   }

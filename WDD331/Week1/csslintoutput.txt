@@ -1,0 +1,26 @@
+
+main.css
+  21:3   ×  Expected whitespace after "/*"                                       comment-whitespace-inside       
+  21:81  ×  Expected whitespace before "*/"                                      comment-whitespace-inside       
+  23:21  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                  
+  38:3   ×  Expected whitespace after "/*"                                       comment-whitespace-inside       
+  38:80  ×  Expected whitespace before "*/"                                      comment-whitespace-inside       
+  40:21  ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                  
+  58:1   ×  Expected selector "nav a" to come before selector "header h1 a"      no-descending-specificity       
+  58:1   ×  Expected selector "nav a" to come before selector "nav ul li a"      no-descending-specificity       
+  74:3   ×  Expected whitespace after "/*"                                       comment-whitespace-inside       
+  74:97  ×  Expected whitespace before "*/"                                      comment-whitespace-inside       
+  80:1   ×  Expected selector "main a" to come before selector "header h1 a"     no-descending-specificity       
+  80:1   ×  Expected selector "main a" to come before selector "nav ul li a"     no-descending-specificity       
+  80:1   ×  Expected selector "main a" to come before selector "nav a:visited"   no-descending-specificity       
+  80:1   ×  Expected selector "main a" to come before selector "nav a:active"    no-descending-specificity       
+  80:1   ×  Expected selector "main a" to come before selector "nav a:hover"     no-descending-specificity       
+  82:9   ×  Expected "#6495ED" to be "#6495ed"                                   color-hex-case                  
+  82:9   ×  Expected single space after ":" with a single-line declaration       declaration-colon-space-after   
+ 100:1   ×  Expected empty line before rule                                      rule-empty-line-before          
+ 100:6   ×  Expected single space before "{"                                     block-opening-brace-space-before
+ 101:5   ×  Expected indentation of 2 spaces                                     indentation                     
+ 103:1   ×  Expected empty line before rule                                      rule-empty-line-before          
+ 118:2   ×  Expected indentation of 0 spaces                                     indentation                     
+ 152:3   ×  Expected empty line before rule                                      rule-empty-line-before
+

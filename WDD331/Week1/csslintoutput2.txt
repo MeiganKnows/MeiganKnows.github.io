@@ -1,0 +1,11 @@
+
+main.css
+  58:1  ×  Expected selector "nav a" to come before selector "header h1 a"      no-descending-specificity
+  58:1  ×  Expected selector "nav a" to come before selector "nav ul li a"      no-descending-specificity
+  80:1  ×  Expected selector "main a" to come before selector "header h1 a"     no-descending-specificity
+  80:1  ×  Expected selector "main a" to come before selector "nav ul li a"     no-descending-specificity
+  80:1  ×  Expected selector "main a" to come before selector "nav a:visited"   no-descending-specificity
+  80:1  ×  Expected selector "main a" to come before selector "nav a:active"    no-descending-specificity
+  80:1  ×  Expected selector "main a" to come before selector "nav a:hover"     no-descending-specificity
+ 154:2  ×  Unexpected whitespace at end of line                                 no-eol-whitespace
+
