@@ -1,0 +1,8 @@
+$card-width: 250px;
+$card-height: $card-width * 1.4;
+.card1, .card2 {
+  border: 1px solid black; 
+  border-radius: 10px; 
+  width: $card-width;
+  height: $card-height;
+}
