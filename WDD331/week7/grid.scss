@@ -3,18 +3,7 @@ $card-width: 40vw;
 $card-height: $card-width*1.4;
 $font-size-number: $card-width * 0.1;
 $icon-size: $card-width / 5;
-$num-columns: 8;
-$one-column: 100% / $num-columns;
-$loop-start: 1;
-$loop-end: $num-columns + 1;
-
-@mixin col($span-num){
-    flex: 0 0 $one-column * $span-num;
-}
-
-@mixin offset($offset-num){
-    margin-left: $one-column * $offset-num;
-}
+$row-height: $card-height / 4;
 
 *,
 *:before,
@@ -48,9 +37,8 @@ $loop-end: $num-columns + 1;
 .number {
     text-align: center;
     font-size: $font-size-number;
-
-    //an icon that is part of a number should be half the normal size
-    &>.icon {
+  //an icon that is part of a number should be half the normal size
+    & > .icon {
         width: $icon-size * .5;
         height: $icon-size *.5;
     }
@@ -61,29 +49,23 @@ $loop-end: $num-columns + 1;
     transform: rotate(180deg);
 }
 
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: space-between;
-    height: 100%;
+.row{
+  display: grid; 
+  grid-gap: 25px;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: repeat(4, 25%);
+  justify-items: center;
+  align-items: center;
 }
 
-.cell {
-    flex: 1;
-    text-align: center;
+.left{
+    grid-column-start: 2;
 }
 
-//column classes
-@for $index from $loop-start to $loop-end{
-    .col-#{$index}{
-        @include col($index);
-    }
+.right{
+    grid-column-start: 3;
 }
 
-//offset classes
-@for $index from $loop-start to $loop-end{
-    .offset-#{$index}{
-        @include offset($index);
-    }
+.center{
+    grid-column: 1/-1;
 }
