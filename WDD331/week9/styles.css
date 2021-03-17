@@ -1031,4 +1031,196 @@ img {
   border: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: "byui open sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: "byui open sans";
+}
+
+.blue-header {
+  background: #056cb6;
+  height: 4em;
+}
+
+.site-banner-left a {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-byui-logo:before {
+  color: #eaeaea;
+  background-color: #020202;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+.icon-search,
+.icon-audience,
+.icon-menu {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grey-header {
+  background: #eaeaea;
+  text-align: center;
+}
+.grey-header h1 {
+  font-weight: 400;
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+}
+
+.learning-outcomes {
+  width: 100%;
+  padding: 10px;
+}
+
+figure {
+  border: solid #727272 1pt;
+}
+figure img {
+  width: 100%;
+}
+figure figcaption {
+  font-weight: 300;
+}
+figure figcaption a {
+  color: #020202;
+  font-size: 1.5em;
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+}
+table tr {
+  padding: 10px;
+  border-collapse: collapse;
+}
+table tr h3 {
+  font-weight: 400;
+  color: #eaeaea;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.gray-table tr:first-child {
+  background-color: #727272;
+  text-align: left;
+}
+.gray-table tr {
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  border: 1pt solid #727272;
+}
+.gray-table tr a {
+  font-weight: 300;
+  color: #0076b6;
+  padding: 20px;
+}
+
+.blue-table tr:first-child {
+  background-color: #056cb6;
+}
+.blue-table tr {
+  border-bottom: 1px solid #727272;
+  display: flex;
+  align-items: space-between;
+}
+.blue-table tr div,
+.blue-table tr span {
+  display: inline;
+}
+
+.article {
+  margin: 20px;
+  padding: 10px;
+}
+.article img {
+  display: none;
+}
+.article div.article-date {
+  font-weight: bold;
+}
+.article h4 a {
+  color: #056cb6;
+}
+
+footer div:before {
+  content: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png);
+  align-self: center;
+}
+
+@media screen and (min-width: 760px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-gap: 10px;
+  }
+
+  .learning-outcomes {
+    grid-column: 1;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .figure-wrapper {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+  }
+  .figure-wrapper figure {
+    margin: 10px;
+  }
+
+  .gray-table {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .article img {
+    display: block;
+    height: 150px;
+    align-self: center;
+  }
+  .article .article-wrapper {
+    padding: 20px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -9,6 +9,10 @@ $light-gray: #eaeaea;
 $body-font: #020202;
 $link-blue: #0076b6; //why do we have both of these blues?
 $byui-blue: #056cb6;
+//fonts
+$font: "byui open sans";
+$normal-font: 300;
+$large-font: 400;
 
 // Utility classes
 *,
@@ -18,9 +22,11 @@ $byui-blue: #056cb6;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -30,4 +36,222 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: $font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: $font;
+}
+
+//Header
+.blue-header {
+  background: $byui-blue;
+  height: 4em;
+}
+
+.site-banner-left a {
+  margin: 0;
+  padding: 0;
+}
+
+.icon-byui-logo:before {
+  color: $light-gray;
+  background-color: $body-font;
+  text-decoration: none;
+  font-size: 4em;
+}
+
+.icon-search,
+.icon-audience,
+.icon-menu {
+  color: $light-gray;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grey-header {
+  background: $light-gray;
+  text-align: center;
+
+  h1 {
+    font-weight: $large-font;
+    font-size: 1.75em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+//Main
+
+.learning-outcomes {
+  width: 100%;
+  padding: 10px;
+}
+
+figure {
+  border: solid $dark-gray 1pt;
+
+  img {
+    width: 100%
+  }
+
+  figcaption {
+    font-weight: $normal-font;
+
+    a {
+      color: $body-font;
+      font-size: 1.5em;
+    }
+
+  }
+}
+
+table {
+  width: 100%;
+  padding: 10px;
+
+  tr {
+
+    padding: 10px;
+    border-collapse: collapse;
+
+    h3 {
+      font-weight: $large-font;
+      color: $light-gray;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.gray-table {
+  tr:first-child {
+    background-color: $dark-gray;
+    text-align: left;
+  }
+
+  tr {
+    background-color: $light-gray;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    border: 1pt solid $dark-gray;
+
+    a {
+      font-weight: $normal-font;
+      color: $link-blue;
+      padding: 20px;
+    }
+  }
+}
+
+.blue-table {
+  tr:first-child {
+    background-color: $byui-blue;
+
+  }
+
+  tr {
+    border-bottom: 1px solid $dark-gray;
+    display: flex;
+    align-items: space-between;
+
+
+    div,
+    span {
+      display: inline;
+    }
+  }
+}
+
+.article {
+  margin: 20px;
+  padding: 10px;
+
+  img {
+    display: none;
+  }
+
+  div.article-date {
+    font-weight: bold;
+  }
+
+  h4 a {
+    color: $byui-blue;
+  }
+}
+
+footer div:before {
+  content: url(https://www.byui.edu/prebuilt/stylenew/images/foot/taylor_graphic_fixed.png);
+  align-self: center;
+}
+@media screen and (min-width:760px) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-gap: 10px;
+  }
+
+  .learning-outcomes {
+    grid-column: 1;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .figure-wrapper {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+
+    figure {
+      margin: 10px;
+    }
+  }
+
+  .gray-table {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    img {
+      display: block;
+      height: 150px;
+      align-self: center;
+    }
+
+    .article-wrapper {
+      padding: 20px;
+    }
+  }
 }
