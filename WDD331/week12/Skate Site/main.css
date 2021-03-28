@@ -8,74 +8,65 @@
   padding: 2rem;
 }
 
-.sectionDark {
-  background-color: #cccccc;
+.sectionDark{
+  background-color: #ccc;
   padding: 2rem;
 }
 
-.coolStuffWrapper {
+.coolStuffWrapper{
   margin-top: 20px;
 }
 
-button.coolStuffBtn {
+button.coolStuffBtn{
   background-color: red;
-  color: #ffffff;
+  color: #fff;
   display: block;
   margin: auto;
 }
 
-h5.modal-title {
+h5.modal-title{
   margin: auto;
 }
 
-.modalFormWrapper {
+.modalFormWrapper{
   padding: 2rem;
 }
 
-.imgCenter {
-  display: block;
+.imgCenter{
+  display: block; 
   margin: auto;
 }
 
-.btnCenter {
+.btnCenter{
   display: block;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px;
   width: 54%;
-    
 }
 
-.footerImg {
+.footerImg{
   padding: 15px;
 }
 
-.fa {
+.fa{
   margin: 10px;
 }
-
-.fa-facebook-square {
+.fa-facebook-square{
   color: #3b5998;
 }
 
-.fa-google-plus-square {
+.fa-google-plus-square{
   color: #c32f10;
 }
 
-.fa-instagram {
-  color: #ffffff;
+.fa-instagram{
+  color: white;
 }
 
-.socialWrapper {
-  margin: auto;
+.socialWrapper{
+margin: auto;
 }
-
-
-
-
-
-
-
 
 
 
