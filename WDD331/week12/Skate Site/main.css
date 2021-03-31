@@ -1,3 +1,5 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+
 .jumbotron {
   text-align: center;
   background: none;
